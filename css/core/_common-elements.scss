@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/breakpoints" as breakpoint;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+  color: black;
+  padding-left: 20%;
+
+  @include breakpoint.tablet {
+    padding-left: 0;
+    padding-top: 72px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: var.$gutter-medium;
+  font-weight: var.$font-weight-bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

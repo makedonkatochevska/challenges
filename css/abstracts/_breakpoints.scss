@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+// RESPONSIVE LAPTOP FIRST DESIGN MIXINS
+@mixin four-k {
+  @media (max-width: var.$four-k) {
+    @content;
+  }
+}
+
+@mixin laptop-l {
+  @media (max-width: var.$laptop-l) {
+    @content;
+  }
+}
+
+@mixin laptop-m {
+  @media (max-width: var.$laptop-m) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: var.$tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  //the styles apply on 424px on inspect tools and not on 425px, idk why
+  @media (max-width: var.$mobile-l) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (max-width: var.$mobile-m) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: var.$mobile-s) {
+    @content;
+  }
+}

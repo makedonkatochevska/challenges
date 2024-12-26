@@ -1,0 +1,22 @@
+@use "./variables" as var;
+@use "../abstracts/breakpoints" as breakpoint;
+@use "sass:math";
+
+%section {
+  padding-block: var.$gutter-big;
+
+  @include breakpoint.tablet {
+    padding-block: var.$gutter-medium;
+  }
+}
+
+%wrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoint.tablet {
+    width: 100%;
+    padding-inline: var.$gutter-medium;
+  }
+}

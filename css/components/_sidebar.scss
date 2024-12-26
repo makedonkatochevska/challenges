@@ -1,0 +1,117 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/breakpoints" as breakpoint;
+@use "sass:math";
+
+.sidebar {
+  @extend %section;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var.$background-color-base;
+  color: var.$text-color-base;
+
+  @include breakpoint.tablet {
+    width: 100%;
+    bottom: auto;
+    z-index: 999;
+  }
+
+  .wrapper {
+    @extend %wrap;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  //header styles
+  header {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint.tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hamburger-icon {
+      display: none;
+      color: var.$text-color-base;
+      font-size: var.$heading-size-medium;
+      padding-inline: var.$gutter-small;
+      border: var.$gutter-tiniest solid var.$text-color-base;
+
+      @include breakpoint.tablet {
+        display: block;
+      }
+    }
+
+    .logo {
+      text-transform: uppercase;
+      font-size: var.$heading-size-big;
+      display: inline-block;
+      margin-bottom: var.$gutter-big;
+
+      @include breakpoint.tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: 0;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var.$gutter-medium;
+
+      @include breakpoint.tablet {
+        display: none;
+      }
+    }
+  }
+
+  //footer styles
+  footer {
+    flex-basis: 30%;
+    display: flex;
+    align-items: flex-end;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .brainster-link {
+      font-weight: var.$font-weight-bold;
+    }
+
+    @include breakpoint.tablet {
+      display: none;
+    }
+  }
+
+  //extra hover styles
+  a:not(.logo) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: var.$gutter-tiniest;
+      background-color: var.$text-color-base;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
