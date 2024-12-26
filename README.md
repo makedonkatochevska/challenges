@@ -88,7 +88,7 @@ The **GloZoom** website was created to demonstrate my ability to work with **Boo
 
 Check out the live demo of the project hosted on Netlify:
 
-<a href="https://magneticgallerywebsite-challenge3.netlify.app/" target="_blank">Live Demo</a>
+<a href="https://glozoom-challenge4.netlify.app/" target="_blank">Live Demo</a>
 
 Or check out the pictures below for a quick preview of the core features:
 
@@ -115,7 +115,7 @@ To run this project locally, follow these steps:
    git clone https://github.com/makedonkatochevska/challenges.git
    ```
 2. Checkout to Challenge4_Bootstrap branch
-3. Open index.html in your preferred browser to view the landing page.
+3. Open index.html in your preferred browser to view the website.
 
 ---
 
