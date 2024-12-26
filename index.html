@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLife Fitness</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="description" content="FitLife Fitness Website" />
+    <meta name="author" content="Makedonka Tochevska" />
+    <meta name="keywords" content="fitness, healthy, workout" />
+  </head>
+  <body>
+    <!-- BANNER -->
+    <header>
+      <div class="hero-section">
+        <h1 class="secondary-text-color">Welcome to FitLife Fitness</h1>
+        <p class="secondary-text-color">
+          Your journey to a healthier lifestyle begins here. Join us for
+          exciting workouts and personalized fitness plans.
+        </p>
+        <button class="btn quaternary-background-color secondary-text-color">
+          Explore Classes
+        </button>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about-section container primary-background-color">
+      <div class="wrapper-80">
+        <h2 class="primary-text-color">About Us</h2>
+        <p class="primary-text-color">
+          FitLife Fitness is committed to helping you achive your fitness goals.
+          Our experienced trainers and state-of-the-art facilities ensure a
+          positive and motivating environment for all fitness levels.
+        </p>
+        <p class="primary-text-color">
+          Discover a wide range of fitness programs tailored to meet your
+          specific needs, including strength training, cardio, yoga, and more.
+        </p>
+      </div>
+    </section>
+
+    <!-- CLASSES -->
+    <main>
+      <section class="classes-section secondary-background-color container">
+        <div class="wrapper-80">
+          <h2 class="primary-text-color">Our Classes</h2>
+
+          <!--first row cards-->
+          <div class="cards-parent">
+            <div class="card-box primary-background-color">
+              <div class="card-inner">
+                <div class="image-box">
+                  <img src="./images/cardio.jpg" alt="man doing cardio" />
+                  <span class="tertiary-text-color primary-background-color"
+                    >20%</span
+                  >
+                </div>
+                <div class="content-box">
+                  <h3 class="primary-text-color">Cardio Blast</h3>
+                  <p class="primary-text-color">
+                    A high-intensity cardio workout to boost your endurance and
+                    burn calories. Join us for a heart-pumping session that will
+                    leave you energized!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-box primary-background-color">
+              <div class="card-inner">
+                <div class="image-box">
+                  <img src="./images/yoga.jpg" alt="woman doing yoga" />
+                  <span class="tertiary-text-color primary-background-color"
+                    >10%</span
+                  >
+                </div>
+                <div class="content-box">
+                  <h3 class="primary-text-color">Yoga Fusion</h3>
+                  <p class="primary-text-color">
+                    Experience the perfect blend of traditional yoga and modern
+                    fitness. Improve flexibility, balance, and inner strength
+                    with our Yoga Fusion classes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--second row cards-->
+          <div class="cards-parent">
+            <div class="card-box primary-background-color">
+              <div class="card-inner">
+                <div class="image-box">
+                  <img
+                    src="./images/strength.jpg"
+                    alt="woman lifting weights"
+                  />
+                  <span class="tertiary-text-color primary-background-color"
+                    >20%</span
+                  >
+                </div>
+                <div class="content-box">
+                  <h3 class="primary-text-color">Strength Training</h3>
+                  <p class="primary-text-color">
+                    Build lean muscle and increase your strength with our
+                    effective strength training classes. Suitable for all
+                    fitness levels, our trainers will guide you through proper
+                    techniques for maximum results.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-box primary-background-color">
+              <div class="card-inner">
+                <div class="image-box">
+                  <img src="./images/hit.jpg" alt="woman working out" />
+                  <span class="tertiary-text-color primary-background-color"
+                    >15%</span
+                  >
+                </div>
+                <div class="content-box">
+                  <h3 class="primary-text-color">HIIT Revolution</h3>
+                  <p class="primary-text-color">
+                    Revolutionize your fitness routine with High-Intensity
+                    Interval Training (HIIT). Burn calories and boost metabolism
+                    in our dynamic and challenging HIIT Revolution classes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SCHEDULE -->
+    <section class="schedule-section container primary-background-color">
+      <div class="wrapper-80">
+        <h2 class="primary-text-color">Class Schedule</h2>
+        <p class="primary-text-color">
+          Check out our weekly class schedule and plan your workouts. We offer
+          flexible timings to accommodate your busy lifestyle.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Day</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cardio Blast</td>
+              <td>Monday, Wednesday, Friday</td>
+              <td>6:00 PM - 7:00 PM</td>
+            </tr>
+            <tr>
+              <td>Strength Training</td>
+              <td>Tuesday, Thursday</td>
+              <td>5:30 PM - 6:30 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section container secondary-background-color">
+      <div class="wrapper-80">
+        <h2 class="primary-text-color">Contact Us</h2>
+        <p class="primary-text-color">
+          Have questions or want to get in touch? Reach out to us!
+        </p>
+        <div class="contact-form-wrapper tertiary-background-color">
+          <form>
+            <label for="name" class="secondary-text-color">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email" class="secondary-text-color">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message" class="secondary-text-color">Message:</label>
+            <textarea name="message" id="message"></textarea>
+
+            <button
+              class="btn quaternary-background-color secondary-text-color"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="quaternary-background-color">
+      <p class="secondary-text-color">
+        &copy; 2024 FitLife Fitness. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

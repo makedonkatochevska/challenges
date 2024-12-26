@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 20px;
+  padding-bottom: 64.8px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 22px;
+}
+
+img {
+  width: 100%;
+}
+
+/*COLOR PALETTE*/
+
+.primary-background-color {
+  background-color: #fff;
+}
+
+.secondary-background-color {
+  background-color: #f4f4f4;
+}
+
+.tertiary-background-color {
+  background-color: #333333;
+}
+
+.quaternary-background-color {
+  background-color: #ff6f61;
+}
+
+.primary-text-color {
+  color: #333333;
+}
+
+.secondary-text-color {
+  color: #fff;
+}
+
+.tertiary-text-color {
+  color: #ff6f61;
+}
+
+/*CONTAINERS*/
+
+.wrapper-80 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/*BUTTON*/
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ee4536;
+}
+
+/*---------------BANNER--------------*/
+header {
+  width: 100%;
+  height: calc(100vh - 64.8px);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url(./images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  position: relative;
+}
+
+.hero-section {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*---------------ABOUT US--------------*/
+.about-section .wrapper-80 p:last-of-type {
+  margin-bottom: 0;
+}
+
+/*---------------CLASSES--------------*/
+.cards-parent {
+  font-size: 0;
+  margin-right: -20px;
+}
+
+.card-box {
+  display: inline-block;
+  width: calc(50% - 20px);
+  border-radius: 5px;
+  box-shadow: 00px 0px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.cards-parent:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.card-box:first-child {
+  margin-right: 20px;
+}
+
+.card-inner {
+  padding: 20px;
+}
+
+.image-box {
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+}
+
+.image-box span {
+  font-size: 16px;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+}
+
+.content-box p {
+  margin-bottom: 0;
+}
+
+/*---------------SCHEDULE--------------*/
+
+.schedule-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-section table th,
+.schedule-section table td {
+  text-align: left;
+  padding: 20px 0;
+  border-bottom: 1px solid #979797;
+}
+
+th:first-child,
+td:first-child {
+  text-indent: 10px;
+}
+
+/*---------------CONTACT--------------*/
+
+.contact-form-wrapper {
+  width: 45%;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.contact-section input,
+.contact-section form label,
+.contact-section form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+}
+
+.contact-section input {
+  min-height: 40px;
+}
+
+.contact-section form label {
+  font-size: 1.3rem;
+}
+
+textarea[name="message"] {
+  min-height: 80px;
+  padding: 10px;
+  scroll-padding-block: 10px;
+}
+
+.contact-section .btn {
+  display: block;
+}
+
+.contact-section input:focus,
+textarea[name="message"]:focus {
+  outline: 2px solid #ee4536;
+}
+
+/*---------------FOOTER--------------*/
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.3rem;
+}
