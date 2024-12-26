@@ -47,7 +47,11 @@ The **Challenge1** landing page is created to showcase my skills in CSS, particu
 
 ## Demo 🎥
 
-Check out the pictures below for a quick preview of the core features:
+Check out the live demo of the project hosted on **Netlify**:
+
+<a href="https://fitlifefitness-challenge1.netlify.app/" target="_blank">Live Demo</a>
+
+Or check out the pictures below for a quick preview of the core features:
 
 <a href="https://i.imghippo.com/files/qYw7987zGo.png" target="_blank">Desktop Version</a>
 
