@@ -1,0 +1,176 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* COLORS */
+
+.dark-gray-background {
+  background-color: #333333;
+}
+
+.red-background {
+  background-color: #d44845;
+  transition: background-color 0.3s ease;
+}
+
+.red-background:hover {
+  background-color: #d65d5b;
+}
+
+.fire-red-background {
+  background-color: #ff0000;
+}
+
+.blue-background {
+  background-color: #337ab7;
+  transition: background-color 0.3s ease;
+}
+
+.blue-background:hover {
+  background-color: #598ebb;
+}
+
+.vivid-blue-background {
+  background-color: #334fff;
+}
+
+.green-background {
+  background-color: #54af53;
+  transition: background-color 0.3s ease;
+}
+
+.green-background:hover {
+  background-color: #72af71;
+}
+
+/* UTILITIES */
+.active {
+  color: white !important;
+  border-left: 2px solid white;
+}
+
+.vh-80 {
+  height: 80vh !important;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.custom-banner {
+  height: 70vh;
+  background-image: url("./Images/image1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.btn-fire {
+  background-color: white;
+  border-color: #ff0000;
+  color: #ff0000;
+  transition: all 0.3s ease-in;
+}
+
+.btn-fire:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+/* NAVBAR */
+@media screen and (max-width: 767px) {
+  .menu-border {
+    border-top: 3px ridge rgb(6, 6, 6);
+  }
+}
+
+nav ul a:hover {
+  color: #fff !important;
+}
+
+/* BANNER - HOME PAGE */
+.carousel-item img {
+  height: 100%;
+  object-position: top;
+}
+
+.carousel-item:first-of-type .carousel-caption {
+  top: 50%;
+  left: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.carousel-item:nth-of-type(2) .carousel-caption,
+.carousel-item:nth-of-type(3) .carousel-caption {
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+
+/* carousel indicators design */
+.carousel-indicators button {
+  height: 2px !important;
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  border-radius: 1px;
+}
+
+.carousel-indicators button.active {
+  background-color: white !important;
+  outline: 1px solid white !important;
+}
+
+/* arrows design on banner (the sharp arrows on font-awesome are pro, so i used svg) */
+.banner-section span.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23f2f2f2' width='256px' height='256px' viewBox='-0.72 -0.72 9.44 9.44' xmlns='http://www.w3.org/2000/svg' stroke='%23f2f2f2'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z' transform='translate(1)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.banner-section span.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23f2f2f2' width='256px' height='256px' viewBox='-0.72 -0.72 9.44 9.44' xmlns='http://www.w3.org/2000/svg' stroke='%23f2f2f2' transform='matrix(-1, 0, 0, 1, 0, 0)'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z' transform='translate(1)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* SECTION2 - HOME PAGE */
+.section2-home {
+  background-image: url("./Images/lights.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* SECTION4 - HOME PAGE */
+.section4-home {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url("./Images/media.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+/* FAQ SECTION - SERVICES PAGE */
+.faq-btn[aria-expanded="true"] {
+  border-bottom-left-radius: 0% !important;
+  border-bottom-right-radius: 0% !important;
+}
+
+/* SECTION1 - ABOUT US PAGE */
+.section1-aboutus img {
+  width: 350px;
+  height: 350px;
+  bottom: 15%;
+}
+
+@media screen and (max-width: 992px) {
+  .section1-aboutus img {
+    bottom: 40%;
+  }
+}
+
+/* TESTIMONIALS SECTION - ABOUT US PAGE */
+/* arrows design on banner (the sharp arrows on font-awesome are pro, so i used svg)*/
+.testimonials-section span.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg width="203px" height="203px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)rotate(90)" stroke="%23f2f2f2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12.0321 1.01712L7.75751 5.22761L9.161 6.65246L11.0197 4.82165L10.9644 22.9768L12.9644 22.9829L13.0195 4.86974L14.8177 6.69525L16.2425 5.29175L12.0321 1.01712Z" fill="%23f2f2f2"></path></g></svg>');
+}
+
+.testimonials-section span.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20width%3D%22203px%22%20height%3D%22203px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20transform%3D%22matrix(1%2C%200%2C%200%2C%201%2C%200%2C%200)rotate(90)%22%20stroke%3D%22%23f2f2f2%22%3E%3Cg%20id%3D%22SVGRepo_bgCarrier%22%20stroke-width%3D%220%22%3E%3C/g%3E%3Cg%20id%3D%22SVGRepo_tracerCarrier%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3C/g%3E%3Cg%20id%3D%22SVGRepo_iconCarrier%22%3E%3Cpath%20d%3D%22M12.0321%201.01712L7.75751%205.22761L9.161%206.65246L11.0197%204.82165L10.9644%2022.9768L12.9644%2022.9829L13.0195%204.86974L14.8177%206.69525L16.2425%205.29175L12.0321%201.01712Z%22%20fill%3D%22%23f2f2f2%22%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}

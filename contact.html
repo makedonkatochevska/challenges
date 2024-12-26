@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" href="./Images/laptop.png" />
+    <title>Contact - GLOZZOM - Bootstrap Challenge</title>
+
+    <!-- Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Candal&family=DynaPuff:wght@400..700&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/6383af2146.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER-NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-md dark-gray-background py-0">
+        <div class="container-fluid py-3">
+          <a
+            class="navbar-brand text-uppercase text-secondary fs-6"
+            href="./index.html"
+            >glozzom</a
+          >
+          <button
+            class="navbar-toggler border-0 text-white shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="container-fluid px-0 px-md-3">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto py-3 py-md-0 menu-border">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase text-secondary px-2"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase text-secondary px-2 text-nowrap"
+                  href="./about.html"
+                  >about us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase text-secondary px-2"
+                  href="./services.html"
+                  >services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase text-secondary px-2"
+                  href="./blog.html"
+                  >blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-uppercase text-secondary px-2"
+                  href="./contact.html"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- i have used two different container-fluid because the drop down menu does not have the padding from the nav container and when i had one container-fluid, the active border did not stick to the end of the screen cause of the padding of the nav container -->
+      </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="custom-banner">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+          <div class="col text-center">
+            <h1 class="text-white">Contact Us</h1>
+            <p class="mb-0 text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, vero mollitia. Voluptate dolorem, aperiam nulla sunt
+              eum officia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION1 CONTACT US PAGE -->
+    <section class="section1-contact py-4">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- Get in touch box -->
+          <div class="col-12 col-md-4 col-lg-3">
+            <!-- div with the border classes nested inside the col div because of the gx-5 (when the borders are directly applied to the col div, the gap does not work because Bootstrap applies the gap with padding and based of the border-sizing, the gap won't be visible.) -->
+            <div class="border border-dark-subtle p-4 rounded-1">
+              <h5>Get in Touch</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="adress-box mb-3">
+                <h6>Address:</h6>
+                <address>550 Main st Boston MA</address>
+              </div>
+              <div class="email-box mb-3">
+                <h6>E-mail</h6>
+                <a
+                  href="emailto:test@test.com"
+                  class="text-body text-decoration-none"
+                  >test@test.com</a
+                >
+              </div>
+              <div class="phone-box">
+                <h6>Phone</h6>
+                <a href="tel:5555555555" class="text-body text-decoration-none"
+                  >(555)555-5555</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- form box -->
+          <div class="col-12 col-md-8 col-lg-7">
+            <div class="border border-dark-subtle p-4 rounded-1">
+              <h5 class="h3 text-body mb-4">
+                Please fill out this form to contact us
+              </h5>
+              <form class="border-top border-dark-subtle pt-4">
+                <div class="row gy-3">
+                  <div class="col-12 col-lg-6 rounded-1">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First name"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-6 rounded-1">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last name"
+                      aria-label="Last name"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-6 rounded-1">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="E-mail"
+                      aria-label="E-mail"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-6 rounded-1">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      aria-label="Phone Number"
+                    />
+                  </div>
+                  <div class="col-12 rounded-1">
+                    <textarea
+                      class="form-control"
+                      placeholder="Message"
+                      id="floatingTextarea2"
+                    ></textarea>
+                  </div>
+                  <div class="col-12 rounded-1">
+                    <button type="submit" class="btn btn-fire w-100">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section1-contact py-4">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <!-- SECTION2 CONTACT US PAGE -->
+    <section class="section2-contact py-4 dark-gray-background">
+      <div class="container-fluid text-center">
+        <h2 class="text-white h4 mb-4">Our Staff</h2>
+        <div
+          class="row text-white border-top border-dark pt-3 justify-content-around"
+        >
+          <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+            <img
+              src="./Images/person1.jpg"
+              alt="person1"
+              class="d-block rounded-circle w-50 mx-auto"
+            />
+            <p class="fs-5 mb-0">Jane Doe</p>
+            <p class="mb-0">Marketing Manager</p>
+          </div>
+          <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+            <img
+              src="./Images/person2.jpg"
+              alt="person2"
+              class="d-block rounded-circle w-50 mx-auto"
+            />
+            <p class="fs-5 mb-0">Sarah Williams</p>
+            <p class="mb-0">Business Manager</p>
+          </div>
+          <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+            <img
+              src="./Images/person3.jpg"
+              alt="person3"
+              class="d-block rounded-circle w-50 mx-auto"
+            />
+            <p class="fs-5 mb-0">Jane Doe</p>
+            <p class="mb-0">CEO</p>
+          </div>
+          <div class="col-12 col-md-3 text-center">
+            <img
+              src="./Images/person4.jpg"
+              alt="person4"
+              class="d-block rounded-circle w-50 mx-auto"
+            />
+            <p class="fs-5 mb-0">Steve Smith</p>
+            <p class="mb-0">Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-4 text-center">
+      <p class="text-white mb-0">Copyright 2018 &copy; Glozzom</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
