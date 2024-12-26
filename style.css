@@ -1,0 +1,404 @@
+/*RESET SETTINGS*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu Mono", monospace;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*COLOR PALETTE*/
+
+.primary-background-color {
+  background-color: #fff;
+}
+
+.secondary-background-color {
+  background-color: rgb(246, 246, 246);
+}
+
+.tertiary-background-color {
+  background-color: #464646;
+}
+
+.quaternary-background-color {
+  background-color: #000;
+}
+
+.red-background {
+  background-color: rgb(255, 84, 68);
+}
+
+.purple-background {
+  background-color: rgb(170, 45, 182);
+}
+
+.cyan-background {
+  background-color: rgb(30, 194, 164);
+}
+
+.blue-background {
+  background-color: rgb(39, 139, 224);
+}
+
+.secondary-text-color {
+  color: #fff;
+}
+
+/*UTILITIES*/
+.wrapper-90 {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.wrapper-70 {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.wrapper-60 {
+  width: 60%;
+  margin-inline: auto;
+}
+
+.container {
+  padding-block: 80px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-basis-33 {
+  flex-basis: 33.3333%;
+}
+
+.flex-basis-25 {
+  flex-basis: 25%;
+}
+
+.uppercase-content {
+  text-transform: uppercase;
+}
+
+.box-shadow {
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+}
+
+/*BUTTONS*/
+
+.dark-btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  background-color: rgb(48, 47, 47);
+  color: #fff;
+  font-weight: 500;
+  padding: 20px 40px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: transform 0.2s ease-in;
+}
+
+/* extra hover effect */
+.dark-btn:hover {
+  transform: scale(1.1);
+}
+
+.light-btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #e6e1e1;
+  color: #000;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.light-btn:hover {
+  background-color: rgb(45, 45, 45);
+  color: #fff;
+}
+
+.active-btn {
+  font-family: inherit;
+  font-size: 0.8rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/*-----------HEADER-------------*/
+.hamburger-icon {
+  display: none;
+}
+
+.logo {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+header nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 30px;
+}
+
+nav .menu {
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+nav .menu > li {
+  position: relative;
+}
+
+.menu .submenu-container {
+  position: absolute;
+  padding-top: 10px;
+}
+
+.menu .submenu {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+  display: none;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu > li:hover .submenu {
+  display: block;
+}
+
+/*extra hover effect on the submenu*/
+.submenu li {
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submenu li:hover {
+  background-color: #f4f4f4;
+}
+
+/*-----------HERO-SECTION-------------*/
+.hero-section {
+  height: calc(100vh - 84.8px);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-content {
+  text-align: center;
+}
+
+.hero-section-content p {
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/*-----------SECTION-1-------------*/
+.statistics-card {
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.section1 .display-flex {
+  gap: 30px;
+}
+
+.statistics-card p:nth-child(2) {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.statistics-card p:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/*-----------SECTION-2-------------*/
+.btn-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.demo-cards-container {
+  flex-wrap: wrap;
+  row-gap: 60px;
+  column-gap: 30px;
+  margin-top: 80px;
+}
+
+.section2 .demo-card {
+  flex-basis: calc(
+    33.333% - 30px
+  ); /*used here calc so the gap is included in the width of the cards*/
+}
+
+.demo-card-title {
+  margin-bottom: 0;
+  text-align: center;
+  padding-block: 10px;
+  font-size: 0.8rem;
+}
+
+.demo-card img {
+  width: 100%;
+  display: block;
+}
+
+.demo-card:hover {
+  border: 2px solid #000;
+}
+
+/*-----------SECTION-3-------------*/
+.section3 .wrapper-70 > p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.line-break {
+  width: 10%;
+  margin: 40px auto;
+  border-bottom: 2px solid rgb(246, 246, 246);
+}
+
+.list-container {
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section3 ul {
+  list-style-image: url(./images/arrow.png);
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.section3 ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/*---------SOCIALS SECTION-----------*/
+.socials-section h3 {
+  text-align: center;
+}
+
+.socials-container ul {
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.socials-container ul li i {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.socials-container ul li i:hover {
+  color: rgb(45, 45, 45);
+}
+
+/*---------FOOTER-----------*/
+footer .display-flex {
+  justify-content: space-between;
+  padding-block: 20px;
+}
+
+footer .display-flex p {
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+/*------MEDIA QUERY FOR MOBILE-----*/
+
+@media screen and (max-width: 426px) /*when is max-width:425px on the inspect tools the design is shown on 424px and below,
+  so i put max-width: 426px so it can be shown od 425px*/ {
+  /* HEADER */
+  .menu {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  /* SECTION-1 */
+  .section1 .display-flex {
+    flex-direction: column;
+  }
+
+  /* SECTION-2 */
+  .demo-cards-container {
+    flex-direction: column;
+  }
+
+  .demo-cards-container:first-child {
+    padding-bottom: 30px;
+  }
+
+  /* SECTION-3 */
+  .list-container ul {
+    flex-basis: 50%;
+  }
+
+  .list-container ul:nth-child(3) {
+    display: none;
+  }
+  /*FOOTER*/
+  footer .display-flex p {
+    font-size: 0.45rem;
+  }
+}
