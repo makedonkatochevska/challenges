@@ -49,7 +49,11 @@ The **Codepreneurs Portfolio** was created as a demonstration of my ability to u
 
 ## Demo 🎥
 
-Check out the pictures below for a quick preview of the core features:
+Check out the live demo of the project hosted on Netlify:
+
+<a href="https://codepreneursportfolio-challenge2.netlify.app/" target="_blank">Live Demo</a>
+
+Or check out the pictures below for a quick preview of the core features:
 
 <a href="https://i.imghippo.com/files/zEJ6169B.png" target="_blank">Desktop Version</a>
 
