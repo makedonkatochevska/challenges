@@ -53,7 +53,7 @@ The **Magnetic Gallery Website** was built as a demonstration of my skills in cr
 
 Check out the live demo of the project hosted on Netlify:
 
-<a href="https://codepreneursportfolio-challenge2.netlify.app/" target="_blank">Live Demo</a>
+<a href="https://magneticgallerywebsite-challenge3.netlify.app/" target="_blank">Live Demo</a>
 
 Or check out the pictures below for a quick preview of the core features:
 
