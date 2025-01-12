@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+  </head>
+  <body>
+    <script>
+      // Your school uses letter grades A, B, C, D, and F as a way to display your final grade.
+      // Prompt the user to enter his own grade as a number Hint: it can be a floating number such as 67.8, use parseFloat). Save this grade in a variable and check:
+      // a. If the grade entered is 90- 100create a heading ‘h1’ with JavaScript and show the message: “Your grade is A”. Color the text in the heading green.
+      // b. If the grade entered is 80- 89 create a heading ‘h1’ with JavaScript and show the message: “Your grade is B”. Color the text in the heading blue.
+      // c. If the grade entered is 70- 79 create a heading ‘h1’ with JavaScript and show the message: “Your grade is C”. Color the text in the heading yellow.
+      // d. If the grade entered is 60- 69 create a heading ‘h1’ with JavaScript and show the message: “Your grade is D”. Color the text in the heading orange.
+      // e. If the grade entered is 0- 59 create a heading ‘h1’ with JavaScript and show the message: “Your grade is F”. Color the text in the heading red.
+      /*
+            //user prompt
+            const userScore = parseFloat(prompt("Please enter your score grade!"));
+
+            //html h1
+            const h1 = document.createElement("h1");
+            document.body.appendChild(h1);
+
+            //if statements
+            if (userScore <= 100 && userScore >= 90) {
+              h1.innerText = "Your grade is A.";
+              h1.style.color = "green";
+            } else if (userScore <= 89 && userScore >= 80) {
+              h1.innerText = "Your grade is B.";
+              h1.style.color = "blue";
+            } else if (userScore <= 79 && userScore >= 70) {
+              h1.innerText = "Your grade is C.";
+              h1.style.color = "yellow";
+            } else if (userScore <= 69 && userScore >= 60) {
+              h1.innerText = "Your grade is D.";
+              h1.style.color = "orange";
+            } else if (userScore <= 59 && userScore >= 0) {
+              h1.innerText = "Your grade is F.";
+              h1.style.color = "red";
+            } else {
+              alert("Please enter a valid grade score!");
+            }
+      */
+
+      //RESULT USING SWITCH
+      switch (true) {
+        case userScore <= 100 && userScore >= 90:
+          h1.innerText = "Your grade is A.";
+          h1.style.color = "green";
+          break;
+
+        case userScore <= 89 && userScore >= 80:
+          h1.innerText = "Your grade is B.";
+          h1.style.color = "blue";
+          break;
+        case userScore <= 79 && userScore >= 70:
+          h1.innerText = "Your grade is C.";
+          h1.style.color = "yellow";
+          break;
+        case userScore <= 69 && userScore >= 60:
+          h1.innerText = "Your grade is D.";
+          h1.style.color = "orange";
+          break;
+        case userScore <= 59 && userScore >= 0:
+          h1.innerText = "Your grade is F.";
+          h1.style.color = "red";
+          break;
+        default:
+          alert("Please enter a valid grade score!");
+      }
+    </script>
+  </body>
+</html>
