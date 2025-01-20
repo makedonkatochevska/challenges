@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2 - PasswordChecker</title>
+  </head>
+  <body>
+    <div id="password"></div>
+    <p id="message"></p>
+    <script>
+      //Prompt the user to enter a password for validation.
+      //Add a div to HTML with id=’password’ which will display the password entered.
+      //Add another separate paragraph in HTML with id=’message’ which will display the error or valid message after password checks.
+      //If the password is less than 8 characters long, show an error message to the user.
+      //If the password does not contain a number or does not contain an uppercase letter, show an error message.
+      //Otherwise, show the user the message ‘Your password is valid!’
+
+      function passwordChecker() {
+        //user prompt
+        const userPass = prompt("Please enter a password for validation!");
+
+        //html elements
+        const passDiv = document.querySelector("#password");
+        const message = document.querySelector("#message");
+        message.style.color = "red";
+        passDiv.textContent = userPass;
+
+        //function to check if there is uppercase
+        function passUppercaseContain(password) {
+          for (let i = 0; i < password.length; i++) {
+            if (password[i] >= "A" && password[i] <= "Z") {
+              return false;
+            }
+          }
+          return true;
+        }
+
+        //function to check if there is number
+        function passNumberContain(password) {
+          for (let i = 0; i < password.length; i++) {
+            if (password[i] >= "0" && password[i] <= "9") {
+              return false;
+            }
+          }
+          return true;
+        }
+
+        //password validation
+        if (userPass.length < 8) {
+          message.textContent =
+            "Your password is too short! Must be at least 8 characters!";
+        } else if (
+          passNumberContain(userPass) ||
+          passUppercaseContain(userPass)
+        ) {
+          message.textContent =
+            "Your password must contain number and uppercase letter!";
+        } else {
+          message.textContent = "Your password is valid!";
+          message.style.color = "green";
+        }
+      }
+
+      passwordChecker();
+    </script>
+  </body>
+</html>

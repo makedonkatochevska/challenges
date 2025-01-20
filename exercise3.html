@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3 - Dynamic Table Generator</title>
+  </head>
+  <body>
+    <script>
+      //Write a JavaScript program that prompts the user to enter two numbers: the number of columns and the number of rows.
+      //The program contains one function: ● generateTable(nrRows, nrColumns) which dynamically generates a simple HTML table with the specified number of columns and rows.
+      //Inside the header cells of the table display ‘Header’ and the header number, while inside the table cells, display the ‘Row’ and the row number as well as ‘Col’ and the column number.
+      //Use the video as a reference.
+      //Hint: You should use 2 for-loops (nested for loops) to render the rows (tr) and the table cells (td or th) inside the rows.
+
+      function generateTable(nrRows, nrColumns) {
+        //table elements
+        const table = document.createElement("table");
+        const tHead = document.createElement("thead");
+        const tBody = document.createElement("tbody");
+
+        //append inner table elements to table
+        table.appendChild(tHead);
+        table.appendChild(tBody);
+
+        //function logic
+        if (isNaN(nrRows) || nrRows < 1 || isNaN(nrColumns) || nrColumns < 1) {
+          alert("Please enter a valid number of rows and columns");
+          nrRows = +prompt("Enter the number of rows!");
+          nrColumns = +prompt("Enter the number of columns!");
+          return generateTable(nrRows, nrColumns);
+        } else {
+          for (let i = 0; i < nrRows; i++) {
+            const row = document.createElement("tr");
+
+            if (i === 0) {
+              tHead.appendChild(row);
+            } else {
+              tBody.appendChild(row);
+            }
+
+            for (let j = 0; j < nrColumns; j++) {
+              if (i === 0) {
+                const header = document.createElement("th");
+                header.innerText = `Header${j + 1}`;
+                header.style.backgroundColor = "#b8bcc2";
+                row.appendChild(header);
+              } else {
+                const col = document.createElement("td");
+                col.style.border = "1px solid black";
+                col.style.padding = "5px";
+                col.innerText = `Row:${i}  Col:${j + 1}`;
+                row.appendChild(col);
+              }
+            }
+          }
+        }
+
+        //append table element
+        document.body.appendChild(table);
+      }
+
+      //user prompt
+      const userRowInput = +prompt("Enter the number of rows!");
+      const userColInput = +prompt("Enter the number of columns!");
+
+      //function call with user inputs as arguments
+      generateTable(userRowInput, userColInput);
+    </script>
+  </body>
+</html>

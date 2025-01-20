@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 - ArrayTransformation</title>
+  </head>
+  <body>
+    <script>
+      //Write a JavaScript function that takes as input an array of numbers and returns a new array which is transformed as follows:
+      //For each number in the array, if that number is less than 10, multiply it by 2; otherwise, multiply it by 4. For sample array: const array = 1, 5, 10, 11, 20, 34;
+      //The output should be: transformArray(array) = 2, 10, 20, 44, 80, 136
+
+      function transformArray(array) {
+        //declaring empty array for the new transformed array
+        let transformedArray = [];
+
+        //loop through all the values in the array
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] <= 10) {
+            transformedArray[i] = array[i] * 2;
+          } else {
+            transformedArray[i] = array[i] * 4;
+          }
+        }
+        return transformedArray;
+      }
+
+      const inputArr = [1, 5, 10, 11, 20, 34];
+
+      //calling the function with inputArr as an argument
+      console.log(transformArray(inputArr));
+    </script>
+  </body>
+</html>
