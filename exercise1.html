@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+  </head>
+  <body>
+    <script>
+      //An IP address is a numerical label assigned to each device (e.g. computer, printer) participating in a computer network that uses the Internet Protocol for communication.
+      //Given a string, find out if it satisfies the IPv4 address naming rules.
+      //Example:
+      //  a. For inputString = “172.16.254.1”, the output should be: isIPv4Address(inputString) = true
+      //  b. For inputString = “172.316.254.1”, the output should be: isIPv4Address(inputString) = false because 316 is not in range 0,255
+      //  c. For inputString=“.254.255.1”, isIPv4Address(inputString) = false
+
+      function isIPv4Address(string) {
+        const stringArr = string.split(".");
+
+        //check if the IP has 4 parts
+        if (stringArr.length !== 4) {
+          return false;
+        }
+
+        for (let i = 0; i < stringArr.length; i++) {
+          //check if any of the parts start with 0 or if it's empty part
+          let stringPart = stringArr[i];
+          if (
+            (stringPart.length > 1 && stringPart[0] === "0") ||
+            stringArr[i] === ""
+          ) {
+            return false;
+          }
+
+          //check if the range of the numbers is correct
+          let numFromStr = Number(stringArr[i]);
+          if (isNaN(numFromStr) || numFromStr < 0 || numFromStr > 255) {
+            return false;
+          }
+        }
+
+        //if all the checks pass, return true
+        return true;
+      }
+
+      const userString = prompt("Enter IP address!");
+
+      console.log(isIPv4Address(userString));
+    </script>
+  </body>
+</html>

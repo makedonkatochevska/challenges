@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+  </head>
+  <body>
+    <script>
+      //Given a rectangular matrix of characters, add a border of asterisks ( * ) to it.
+      //Example:
+      //  ● For picture = [“abc”, “ded”] the output should be:
+      // addBorder(picture) = ["*****"
+      //                       "*abc*",
+      //                       "*ded*",
+      //                       "*****",]
+
+      function addBorder(array) {
+        //top and bottom border made out of asterisks
+        const topAndBottomBorder = "*".repeat(array[0].length + 2);
+
+        //final bordered array starting empty
+        let finalArray = [];
+
+        //adding the top border
+        finalArray.push(topAndBottomBorder);
+
+        //adding the rows with asterisks on the beginning and the end for every element of the array
+        for (let i = 0; i < array.length; i++) {
+          const row = Array.from(array[i]);
+          row.push("*");
+          row.unshift("*");
+          const joinedRow = row.join("");
+
+          finalArray.push(joinedRow);
+        }
+
+        //adding the bottom border
+        finalArray.push(topAndBottomBorder);
+
+        return finalArray;
+      }
+
+      //declaring the array
+      const userArr = ["hello", "smile"];
+
+      //Bordered array
+      const borderedArray = addBorder(userArr);
+      console.log(borderedArray);
+
+      //------------------Function for output printed as string(the one above will give an output as array)------------------
+      /*function formattedOutput() {
+        let output = "[";
+        for (let i = 0; i < borderedArray.length; i++) {
+          if (i === 0) {
+            output += `"${borderedArray[i]}",`;
+          } else if (
+            borderedArray[i] !== borderedArray[borderedArray.length - 1]
+          ) {
+            output += `\n "${borderedArray[i]}",`;
+          } else {
+            output += `\n "${borderedArray[i]}"`;
+          }
+        }
+        output += "]";
+        return output;
+      }
+
+      console.log(formattedOutput());*/
+    </script>
+  </body>
+</html>
