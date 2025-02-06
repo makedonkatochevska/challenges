@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+  </head>
+  <body>
+    <script>
+      //Implement a queue using an array.
+      //Create function enqueue(item) to add an item to the queue (use push()) and also create function dequeue() to remove the first item from the queue (use shift()).
+      //Test the queue by adding and removing items.
+
+      //initial queue
+      let queue = [1, 2, 3];
+
+      //the main function where we call the callback functions
+      function addAndRemoveFromQueue(item, addFnc, removeFnc) {
+        console.log("Queue before:", queue);
+
+        addFnc(item);
+        console.log("Queue after adding item:", queue);
+
+        removeFnc();
+        console.log("Queue after removing item:", queue);
+
+        return queue;
+      }
+
+      //fnc to add items
+      function enqueue(item) {
+        queue.push(item);
+      }
+
+      //fnc to remove items
+      function dequeue() {
+        queue.shift();
+      }
+
+      //while loop that loops over and over again and prompts the user to enter item until he click 'cancel'
+      let userItem;
+      while (
+        (userItem = prompt("Enter an item you want to add to the queue!")) !==
+        null
+      ) {
+        addAndRemoveFromQueue(userItem, enqueue, dequeue);
+        console.log("Final queue:", queue);
+      }
+    </script>
+  </body>
+</html>

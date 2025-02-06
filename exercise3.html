@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+  </head>
+  <body>
+    <script>
+      //Create a JavaScript program that iterates in an array of different numbers and checks if the number is prime or not.
+      //Print on the console an array with the result of these checks.
+      //Create a function that iterates through the array of numbers and another function that checks if the number is prime or not.
+      //Remember, a prime number is a number greater than 1 that can only be divided (without a remainder) by 1 and itself.
+      //Example: const numbers = 2, 3, 4, 5, 6, 7, 8, 9, 10;
+      //Result: [true, true, false, true, false, true, false, false, false];
+
+      //Fnc to check if the number is prime or not
+      const isItPrimeNum = function (number) {
+        //checks if the number is greater than 1
+        if (number <= 1) {
+          return false;
+        }
+
+        //checks if it's divisible only by 1 and itself
+        for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+            return false;
+          }
+        }
+
+        //if all the checks are passed, returns that indeed it's a prime number
+        return true;
+      };
+
+      //Fnc to create the new array with boolean values and using the isItPrimeNum function as callback
+      const printPrimeNumbers = function (array, callbackFnc) {
+        const primeNumbersArray = array.map(callbackFnc);
+
+        return primeNumbersArray;
+      };
+
+      //numbers arr
+      const numbers = [
+        2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+      ];
+
+      //calling the fnc
+      console.log("Original array:", numbers);
+      console.log(
+        "Is it prime number:",
+        printPrimeNumbers(numbers, isItPrimeNum)
+      );
+    </script>
+  </body>
+</html>
