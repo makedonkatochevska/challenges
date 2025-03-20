@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 11</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      .highlight-current-date {
+        background-color: #ffeeba;
+      }
+    </style>
+  </head>
+  <body class="container mt-5">
+    <h1 class="mb-4">Dynamic Day Planner</h1>
+
+    <!-- Display current date -->
+    <div class="mb-4">
+      <p id="currentDate" class="lead"></p>
+    </div>
+
+    <!-- Add new task section -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <label for="taskDescription">Task description:</label>
+        <input type="text" id="taskDescription" class="form-control" />
+      </div>
+      <div class="col-md-3">
+        <label for="taskTime">Task time:</label>
+        <input type="time" id="taskTime" class="form-control" />
+      </div>
+      <div class="col-md-3">
+        <label for="taskDate">Task date:</label>
+        <input type="date" id="taskDate" class="form-control" />
+      </div>
+      <div class="col-md-2">
+        <button id="addTaskButton" class="btn btn-primary btn-block mt-md-4">
+          Add Task
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <ul id="taskList" class="list-group"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
