@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="container mt-5">
+    <h2>Expense Tracker</h2>
+
+    <!-- Expense Form -->
+    <div class="mb-3">
+      <input
+        type="text"
+        id="description"
+        placeholder="Description"
+        class="form-control"
+      />
+      <input
+        type="number"
+        id="amount"
+        placeholder="Amount"
+        class="form-control mt-2"
+      />
+      <input type="date" id="date" class="form-control mt-2" />
+      <select id="category" class="form-control mt-2">
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Entertainment">Entertainment</option>
+      </select>
+      <input type="hidden" id="editIndex" value="" />
+      <button
+        id="submitExpense"
+        onclick="addOrUpdateExpense()"
+        class="btn btn-primary mt-2"
+      >
+        Submit Expense
+      </button>
+    </div>
+    <!-- Display Expenses -->
+    <div class="container mt-5">
+      <div class="mt-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Description</th>
+              <th scope="col">
+                Amount
+                <button
+                  onclick="sortExpenses('amount','asc')"
+                  class="btn btn-light btn-sm"
+                >
+                  &#9650;
+                </button>
+                <button
+                  onclick="sortExpenses('amount','desc')"
+                  class="btn btn-light btn-sm"
+                >
+                  &#9660;
+                </button>
+              </th>
+              <th scope="col">Date</th>
+              <th scope="col">Category</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="expensesList"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
