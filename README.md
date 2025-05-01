@@ -7,6 +7,7 @@
   - 📜 Project Description <br>
   - ⚙️ Technologies Used <br>
   - 🔨 Installation <br>
+  - 🎥 Demo <br>
   - 🚀 Usage <br>
   - 📝 Credits <br>
   - 📞 Contact <br>
@@ -62,6 +63,16 @@ To run these exercises locally, follow these steps:
 
 ---
 
+## Demo 🎥
+
+Check out the screenshots of the project:
+
+<a href="https://i.imghippo.com/files/AXV2350YE.png" target="_blank">Full Page</a>
+<br>
+<a href="https://i.imghippo.com/files/sFL1916Fmk.png" target="_blank">Filtered Page</a>
+
+---
+
 ## Usage 🚀
 
 ### Website Functionality
@@ -104,7 +115,7 @@ To run these exercises locally, follow these steps:
 - Active filters are styled with a **bold font** and **orange color**.
 - Clicking a selected filter again will deactivate it and remove the styling.
 
-> ⚠️ Note: All UI behavior and design effects (including hover states) are implemented exactly as shown in the provided video. This site is intended for desktop use only and is not responsive.
+> ⚠️ Note: All UI behavior and design effects (including hover states) are implemented exactly as shown in the provided screenshot. This site is intended for desktop use only and is not responsive.
 
 ---
 
