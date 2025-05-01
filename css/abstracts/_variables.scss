@@ -1,0 +1,53 @@
+@use "sass:math";
+
+@function rem-calc($size) {
+  @return (math.div($size, 16)) * 1rem;
+}
+
+//Font settings
+$font-family-base: arial, sans-serif;
+$heading-family-base: arial, sans-serif;
+
+$font-size-base: rem-calc(16);
+$font-size-medium: rem-calc(18);
+$font-size-big: rem-calc(20);
+
+$heading-size-base: rem-calc(20);
+$heading-size-tiny: rem-calc(24);
+$heading-size-small: rem-calc(30);
+$heading-size-big: rem-calc(50);
+$heading-size-bigger: rem-calc(100);
+$heading-size-enormous: rem-calc(140);
+
+$line-height-base: 1.5;
+$line-height-small: 1.25;
+
+$font-weight-normal: 500;
+$font-weight-bold: 800;
+
+// Size settings
+$gutter-base: rem-calc(30);
+$gutter-tiny: math.div($gutter-base, 6);
+$gutter-small: math.div($gutter-base, 3);
+$gutter-medium: math.div($gutter-base, 2);
+$gutter-big: $gutter-base * 1.5;
+$gutter-bigger: $gutter-base * 2;
+
+// Color settings
+$text-color-base: #111;
+$text-color-primary: #333333;
+$text-color-secondary: #fff;
+$text-color-tertiary: #ffa500;
+
+$background-color-base: #e7e7e7;
+$background-color-primary: #ffff;
+$background-color-secondary: #ffa500;
+$background-color-tertiary: #d3d3d3;
+$background-color-neutral: #f8f8f8;
+
+$hover-bg-color: #808080;
+
+//border
+$base-border: 1px solid $background-color-tertiary;
+$card-border: 3px solid $background-color-tertiary;
+$hover-border: 3px solid $background-color-secondary;

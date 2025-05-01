@@ -1,0 +1,29 @@
+@use "./variables" as var;
+@use "sass:math";
+
+//container for padding
+%container {
+  padding-block: var.$gutter-base;
+}
+
+//wrapper
+%wrap85 {
+  width: 85%;
+  margin-inline: auto;
+}
+
+//flex (if needed)
+@mixin flex(
+  $flex-direction,
+  $justify-content,
+  $align-items,
+  $gap: 0,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+  flex-wrap: $wrap;
+}

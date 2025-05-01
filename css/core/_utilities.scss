@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.active-filter {
+  font-weight: var.$font-weight-bold;
+  color: var.$text-color-tertiary;
+}
+
+.active-button {
+  background-color: var.$background-color-secondary !important;
+}

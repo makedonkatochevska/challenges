@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <!-- HEADER -->
+      <header>
+        <a class="logo" href="#"><img src="./img/logo.png" alt="logo" /></a>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Bikes</li>
+            <li>Gear</li>
+            <li>Parts</li>
+            <li>Tires</li>
+            <li>Service-info</li>
+            <li>Catalogues</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+
+        <div class="action-icon">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </header>
+
+      <!-- MAIN SECTION -->
+      <main>
+        <div class="title">
+          <h1>Bikes</h1>
+        </div>
+
+        <div class="main-section-inner">
+          <!-- FILTER SIDEBAR -->
+          <aside>
+            <h2>Filter by:</h2>
+            <div class="filter-container">
+              <ul>
+                <li id="showAllFilter">
+                  <div class="filter-list-inner">
+                    <p class="filter-name" id="showAllP">Show all</p>
+                    <button class="filter-number-btn" id="showAllBtn">0</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-container">
+              <h3>Gender</h3>
+              <ul id="genderContainer">
+                <!-- <li>
+                  <div class="filter-list-inner">
+                    <p class="filter-name">Male</p>
+                    <button class="filter-number-btn">0</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="filter-list-inner">
+                    <p class="filter-name">Female</p>
+                    <button class="filter-number-btn">0</button>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+            <div class="filter-container">
+              <h3>Brand</h3>
+              <ul id="brandFilterContainer"></ul>
+            </div>
+          </aside>
+
+          <!-- PRODUCTS SECTION -->
+          <section class="products-section"></section>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-container">
+          <div class="socials-container">
+            <h3>Social share</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="info-container">
+            <h3>Event info</h3>
+            <ul>
+              <li>Enter Now</li>
+              <li>Event info</li>
+              <li>Course Maps</li>
+              <li>Race Pack</li>
+              <li>Results</li>
+              <li>FAQs</li>
+              <li>Am I Registered?</li>
+            </ul>
+          </div>
+          <div class="info-container">
+            <h3>Registration</h3>
+            <ul>
+              <li>Volunteers</li>
+              <li>Gallery</li>
+              <li>Press</li>
+              <li>Results</li>
+              <li>Privacy Policy</li>
+              <li>Service Plus</li>
+              <li>Contacts</li>
+            </ul>
+          </div>
+          <div class="info-container">
+            <h3>Schedule</h3>
+            <ul>
+              <li>Gallery</li>
+              <li>About</li>
+              <li>Videos</li>
+              <li>Results</li>
+              <li>FAQs</li>
+              <li>Results</li>
+              <li>Volunteers</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- custom script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

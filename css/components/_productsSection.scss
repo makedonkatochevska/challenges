@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.products-section {
+  flex-basis: 75%;
+  @extend %container;
+  @include mix.flex(row, flex-start, flex-start, var.$gutter-medium, wrap);
+
+  //card
+  .card {
+    flex-basis: calc(33.3333% - var.$gutter-medium);
+    border: var.$card-border;
+    border-radius: 5px;
+    cursor: pointer;
+
+    img {
+      transform: scale(0.8);
+      transition: transform 0.3s ease-in;
+      width: 250px;
+      height: 170px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    //title container
+    .title-container {
+      padding: var.$gutter-medium;
+      background-color: var.$background-color-secondary;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover img {
+      transform: scale(1);
+    }
+
+    &:hover {
+      border: var.$hover-border;
+    }
+  }
+}

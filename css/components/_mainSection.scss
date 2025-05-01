@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+main {
+  margin-inline: var.$gutter-medium;
+
+  .title {
+    @extend %container;
+    border-bottom: var.$base-border;
+  }
+
+  .main-section-inner {
+    @include mix.flex(row, space-between, stretch, var.$gutter-base);
+  }
+}

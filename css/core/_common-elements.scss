@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+body {
+  font-family: var.$font-family-base;
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  background-color: var.$background-color-base;
+}
+
+.body-wrapper {
+  @extend %wrap85;
+  background-color: var.$background-color-primary;
+}
+
+h1 {
+  font-family: var.$heading-family-base;
+  font-size: var.$heading-size-big;
+  color: var.$text-color-primary;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-small;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: var.$heading-family-base;
+  font-size: var.$heading-size-small;
+  font-weight: var.$font-weight-bold;
+  color: var.$text-color-primary;
+}
+
+h3 {
+  font-size: var.$heading-size-base;
+  margin-bottom: var.$gutter-small;
+  font-weight: var.$font-weight-bold;
+  margin-bottom: var.$gutter-medium;
+  color: var.$text-color-primary;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: var.$text-color-base;
+  font-weight: var.$font-weight-bold;
+}
