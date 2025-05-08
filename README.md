@@ -16,3 +16,58 @@ The challenges are designed to build our skills progressively, from mastering ba
 - **Individual Challenge Branches**: Each branch corresponds to a specific week's challenge. Explore them to see how we tackle different front-end tasks each week.
 
 These challenges are a great way to test your skills, experiment with new ideas, and see your progress as a front-end developer. Check out the branches to see how the challenges escalate and the skills i develop each week!
+
+Below is a list of all the branches in this repository, along with a summary of what each one contains:
+
+### Challenge Branches:
+
+- **Branch**: `Challenge1_CSS`
+
+  - **Summary**: Focused on building a webpage with basic CSS. It included exercises on text styling, layout creation, and working with simple CSS properties like margins, padding, fonts, and colors.
+
+- **Branch**: `Challenge2_CSSflex`
+
+  - **Summary**: Introduced the use of CSS Flexbox to create flexible and responsive layouts. Emphasis was placed on alignments, order of elements, and distribution of space within a container.
+
+- **Branch**: `Challenge3_SCSS`
+
+  - **Summary**: Worked with SCSS (Sass) to explore variables, nesting, and mixins. This challenge involved converting plain CSS to SCSS and understanding how to structure stylesheets more efficiently.
+
+- **Branch**: `Challenge4_Bootstrap`
+
+  - **Summary**: Applied Bootstrap to create responsive web layouts. Focused on using the grid system, components, and utilities provided by Bootstrap to build a layout that adapts to different screen sizes.
+
+- **Branch**: `Challenge5_JSBasics`
+
+  - **Summary**: Covered the fundamentals of JavaScript, including variables, data types, functions, loops, and conditionals. Focused on writing simple scripts to manipulate data and control the flow of logic.
+
+- **Branch**: `Challenge6_Arr_Loops_Functions`
+
+  - **Summary**: Implemented array manipulation techniques using JavaScript, such as `map()`, `filter()`, `reduce()`, and worked with loops and functions to process data in different ways.
+
+- **Branch**: `Challenge7_Array_Methods`
+
+  - **Summary**: Focused on using JavaScript array methods to perform advanced data manipulation. Covered methods like `forEach()`, `find()`, `sort()`, and `reverse()` to modify arrays and work with data efficiently.
+
+- **Branch**: `Challenge8_Functions_Advanced`
+
+  - **Summary**: Deep dive into JavaScript functions with a focus on advanced topics such as higher-order functions, closures, and callback functions. This challenge enhanced understanding of how functions can be used effectively in JavaScript.
+
+- **Branch**: `Challenge9_JS_Events_and_Objects`
+
+  - **Summary**: Introduced JavaScript events and objects, showing how to manipulate the DOM through event listeners, how to handle user interactions, and how to create and manipulate custom objects in JavaScript.
+
+- **Branch**: `Challenge10_JS_Objects`
+
+  - **Summary**: Focused on understanding and working with JavaScript objects. Covered topics such as object properties, methods, iteration over objects, and object manipulation techniques.
+
+- **Branch**: `Challenge11_JS_Scoping_Date_Contex`
+
+  - **Summary**: Covered JavaScript scoping, context, and closures, with an emphasis on the `this` keyword and how it behaves in different contexts. Also included working with JavaScript's `Date` object for date manipulation and formatting.
+
+- **Branch**: `Challenge12_JavaScript_CRUD`
+
+  - **Summary**: Implemented CRUD (Create, Read, Update, Delete) operations using JavaScript to manipulate data in arrays or objects. Focused on working with forms, storing data in variables, and updating the DOM dynamically.
+
+- **Branch**: `Challenge13_Async_JavaScript`
+  - **Summary**: Explored asynchronous JavaScript programming using techniques like callbacks, promises, and async/await. The challenge involved making asynchronous API calls, handling data, and building a more interactive and responsive user experience.
