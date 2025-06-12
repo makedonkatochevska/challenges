@@ -1,73 +1,200 @@
-# Weekly Front-End Challenges
+# Challenge 14 - React + TypeScript Adventure Blog 🌍
 
-Welcome to my repository for the **weekly challenges** at **Brainster Front-End Academy**! Each week, we are tasked with a new challenge that helps us sharpen our coding skills and apply the concepts learned during the course.
+## Table of Contents
 
-### Challenge Format:
+<details>
+  <summary>Click to expand</summary>
+  - 📜 Project Description <br>
+  - ⚙️ Technologies Used <br>
+  - 🔗 Demo <br>
+  - 🔨 Installation <br>
+  - 🚀 Usage <br>
+  - 🧰 Template Reference <br>
+  - 📝 Credits <br>
+  - 📞 Contact <br>
+</details>
 
-- **Frequency**: One challenge every week.
-- **Duration**: We have **7 days** to complete each challenge.
-- **Progression**: The difficulty of the challenges increases over time, starting with simpler tasks and gradually advancing to more complex ones.
+---
 
-The challenges are designed to build our skills progressively, from mastering basic HTML and CSS to diving deeper into Bootstrap, JavaScript, React, and other advanced front-end technologies. With each passing week, we face new problems that push us to think critically and improve our ability to write clean, efficient code.
+## Project Description 📜
 
-### What You’ll Find in This Repo:
+The **Adventure Blog Application** is a responsive single-page React app created using **TypeScript** and **Vite**, designed to showcase different travel destinations. The challenge focuses on component-based design, prop handling, and working with external data using **JSON Server**.
 
-- **Main Branch**: Overview and general information about the challenges.
-- **Individual Challenge Branches**: Each branch corresponds to a specific week's challenge. Explore them to see how we tackle different front-end tasks each week.
+### Key Features:
 
-These challenges are a great way to test your skills, experiment with new ideas, and see your progress as a front-end developer. Check out the branches to see how the challenges escalate and the skills i develop each week!
+- **Banner Component**: A large, eye-catching banner with centered content.
+- **DetailsBlock Component**: Displays text on one side and an image on the other. Two unique variations are created.
+- **PlacesContainer Component**: Fetches and iterates over travel places from `db.json`.
+- **Place Component**: Displays individual place info such as an image, title, and short description.
+- **Footer Component**: A simple footer for the site.
+- **Responsive Design**: Optimized for laptops, tablets, and mobile devices.
+- **Dummy Images**: Uses [Picsum](https://picsum.photos/) for placeholder images.
+- **TypeScript Best Practices**: All components, props, and methods are typed properly using `.tsx` extensions.
 
-Below is a list of all the branches in this repository, along with a summary of what each one contains:
+---
 
-### Challenge Branches:
+## Technologies Used ⚙️
 
-- **Branch**: `Challenge1_CSS`
+- ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+- ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
+- ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-  - **Summary**: Focused on building a webpage with basic CSS. It included exercises on text styling, layout creation, and working with simple CSS properties like margins, padding, fonts, and colors.
+---
 
-- **Branch**: `Challenge2_CSSflex`
+## 🔗 Demo
 
-  - **Summary**: Introduced the use of CSS Flexbox to create flexible and responsive layouts. Emphasis was placed on alignments, order of elements, and distribution of space within a container.
+Check out the live demo of the Adventure Blog App:
 
-- **Branch**: `Challenge3_SCSS`
+👉 [Laptop Version](https://i.imghippo.com/files/kLe9228jdU.png)
 
-  - **Summary**: Worked with SCSS (Sass) to explore variables, nesting, and mixins. This challenge involved converting plain CSS to SCSS and understanding how to structure stylesheets more efficiently.
+---
 
-- **Branch**: `Challenge4_Bootstrap`
+## Installation 🔨
 
-  - **Summary**: Applied Bootstrap to create responsive web layouts. Focused on using the grid system, components, and utilities provided by Bootstrap to build a layout that adapts to different screen sizes.
+To run this project locally, follow the steps below:
 
-- **Branch**: `Challenge5_JSBasics`
+### Steps to Install
 
-  - **Summary**: Covered the fundamentals of JavaScript, including variables, data types, functions, loops, and conditionals. Focused on writing simple scripts to manipulate data and control the flow of logic.
+1. Clone the repository:
 
-- **Branch**: `Challenge6_Arr_Loops_Functions`
+   ```bash
+   git clone https://github.com/makedonkatochevska/challenges.git
+   ```
 
-  - **Summary**: Implemented array manipulation techniques using JavaScript, such as `map()`, `filter()`, `reduce()`, and worked with loops and functions to process data in different ways.
+2. Clone the repository:
 
-- **Branch**: `Challenge7_Array_Methods`
+   ```bash
+   git clone https://github.com/makedonkatochevska/challenges.git
+   ```
 
-  - **Summary**: Focused on using JavaScript array methods to perform advanced data manipulation. Covered methods like `forEach()`, `find()`, `sort()`, and `reverse()` to modify arrays and work with data efficiently.
+3. Switch to the challenge branch:
 
-- **Branch**: `Challenge8_Functions_Advanced`
+   ```bash
+   git checkout Challenge19_React_Basics
+   ```
 
-  - **Summary**: Deep dive into JavaScript functions with a focus on advanced topics such as higher-order functions, closures, and callback functions. This challenge enhanced understanding of how functions can be used effectively in JavaScript.
+4. Install dependencies:
 
-- **Branch**: `Challenge9_JS_Events_and_Objects`
+   ```bash
+   npm install
+   ```
 
-  - **Summary**: Introduced JavaScript events and objects, showing how to manipulate the DOM through event listeners, how to handle user interactions, and how to create and manipulate custom objects in JavaScript.
+5. Start the development server:
 
-- **Branch**: `Challenge10_JS_Objects`
+   ```bash
+   npm run dev
+   ```
 
-  - **Summary**: Focused on understanding and working with JavaScript objects. Covered topics such as object properties, methods, iteration over objects, and object manipulation techniques.
+6. In a separate terminal, run the JSON server:
+   ```bash
+   npm run server
+   ```
 
-- **Branch**: `Challenge11_JS_Scoping_Date_Contex`
+---
 
-  - **Summary**: Covered JavaScript scoping, context, and closures, with an emphasis on the `this` keyword and how it behaves in different contexts. Also included working with JavaScript's `Date` object for date manipulation and formatting.
+## Usage 🚀
 
-- **Branch**: `Challenge12_JavaScript_CRUD`
+### Components Overview
 
-  - **Summary**: Implemented CRUD (Create, Read, Update, Delete) operations using JavaScript to manipulate data in arrays or objects. Focused on working with forms, storing data in variables, and updating the DOM dynamically.
+#### 1. **Banner**
 
-- **Branch**: `Challenge13_Async_JavaScript`
-  - **Summary**: Explored asynchronous JavaScript programming using techniques like callbacks, promises, and async/await. The challenge involved making asynchronous API calls, handling data, and building a more interactive and responsive user experience.
+- Displays a full-width banner image with centered heading or intro text.
+
+#### 2. **DetailsBlock**
+
+- Reusable layout component showing text and an image side by side.
+- Two unique versions are created using different content.
+
+#### 3. **PlacesContainer**
+
+- Fetches destination data from `db.json`.
+- Loops through places and renders each with the `Place` component.
+
+#### 4. **Place**
+
+- Displays individual place card with title, image, and brief description.
+
+#### 5. **Footer**
+
+- Static footer with optional links or copyright.
+
+### Responsiveness
+
+- Fully responsive layout tested on laptop, tablet, and mobile devices.
+
+---
+
+## 🧰 Template Reference
+
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+});
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
+
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    "react-x": reactX,
+    "react-dom": reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs["recommended-typescript"].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+});
+```
+
+---
+
+## Credits 📝
+
+This project was developed as part of a React + TypeScript coding challenge focused on creating reusable components, consuming JSON-based data, and building a clean, responsive design with best practices in mind.
+
+---
+
+## Contact 📞
+
+📫 You can reach me at [makedonkatochevska@gmail.com](mailto:makedonkatochevska@gmail.com) or connect with me on:
+
+- [LinkedIn](https://www.linkedin.com/in/makedonka-tochevska)
+- [GitHub](https://github.com/makedonkatochevska)
