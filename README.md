@@ -70,4 +70,9 @@ Below is a list of all the branches in this repository, along with a summary of 
   - **Summary**: Implemented CRUD (Create, Read, Update, Delete) operations using JavaScript to manipulate data in arrays or objects. Focused on working with forms, storing data in variables, and updating the DOM dynamically.
 
 - **Branch**: `Challenge13_Async_JavaScript`
+
   - **Summary**: Explored asynchronous JavaScript programming using techniques like callbacks, promises, and async/await. The challenge involved making asynchronous API calls, handling data, and building a more interactive and responsive user experience.
+
+- **Branch**: `Challenge14_React_Basics`
+
+  - **Summary**: Built a responsive single-page React application using TypeScript and Vite. The challenge emphasized core React concepts such as component-based architecture, prop management, and integration with external data sources. Key goals included creating reusable UI components, applying TypeScript best practices, and rendering dynamic content from a JSON Server to simulate real-world data interaction.
