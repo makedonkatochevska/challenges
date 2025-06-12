@@ -1,0 +1,28 @@
+.banner {
+  background-image: url("https://picsum.photos/id/116/2000/1200");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.banner-content {
+  flex-basis: 100%;
+}
+
+.banner-btn {
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY */
+
+/* mobile */
+@media screen and (max-width: 425px) {
+  .banner-btn {
+    width: 100%;
+  }
+}

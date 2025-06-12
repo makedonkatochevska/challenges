@@ -1,0 +1,29 @@
+.place {
+  flex-basis: 33.333%;
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY */
+/* tablet */
+@media screen and (max-width: 768px) {
+  .place {
+    flex-basis: 50%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 425px) {
+  .place {
+    flex-basis: 100%;
+  }
+}
