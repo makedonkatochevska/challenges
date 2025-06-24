@@ -1,78 +1,182 @@
-# Weekly Front-End Challenges
+# Challenge 15 - React + TypeScript Bike Store
 
-Welcome to my repository for the **weekly challenges** at **Brainster Front-End Academy**! Each week, we are tasked with a new challenge that helps us sharpen our coding skills and apply the concepts learned during the course.
+## Table of Contents
 
-### Challenge Format:
+<details>
+  <summary>Click to expand</summary>
+  - 📜 Project Description <br>
+  - ⚙️ Technologies Used <br>
+  - 🔗 Demo <br>
+  - 🔨 Installation <br>
+  - 🚀 Usage <br>
+  - 🧰 Template Reference <br>
+  - 📝 Credits <br>
+  - 📞 Contact <br>
+</details>
 
-- **Frequency**: One challenge every week.
-- **Duration**: We have **7 days** to complete each challenge.
-- **Progression**: The difficulty of the challenges increases over time, starting with simpler tasks and gradually advancing to more complex ones.
+---
 
-The challenges are designed to build our skills progressively, from mastering basic HTML and CSS to diving deeper into Bootstrap, JavaScript, React, and other advanced front-end technologies. With each passing week, we face new problems that push us to think critically and improve our ability to write clean, efficient code.
+## Project Description 📜
 
-### What You’ll Find in This Repo:
+This React-based **Bike Store Application** is a modern rewrite of a JavaScript DOM challenge focused on fetching and displaying bikes dynamically with filtering functionality. The app fetches bike data from an external API and displays cards for each product. Users can filter bikes by **either gender or brand**, but only one filter at a time is allowed.
 
-- **Main Branch**: Overview and general information about the challenges.
-- **Individual Challenge Branches**: Each branch corresponds to a specific week's challenge. Explore them to see how we tackle different front-end tasks each week.
+Key features include:
 
-These challenges are a great way to test your skills, experiment with new ideas, and see your progress as a front-end developer. Check out the branches to see how the challenges escalate and the skills i develop each week!
+- Data fetching with React hooks (`useEffect`, `useState`) and async/await.
+- Components: `Card`, `CardsContainer`, `Filters`, `EachFilter`, `Header`, `Footer`, `MainSection`.
+- Single-filter logic: users can filter by **one** gender or **one** brand at a time.
+- Real-time filter badge counts reflecting how many products match each filter.
+- Active filter highlighting with bold and orange styling.
+- Clean, modular React component structure.
+- Desktop-only layout consistent with the original challenge design.
 
-Below is a list of all the branches in this repository, along with a summary of what each one contains:
+---
 
-### Challenge Branches:
+## Technologies Used ⚙️
 
-- **Branch**: `Challenge1_CSS`
+- ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+- ![CSS Modules](https://img.shields.io/badge/CSS_Modules-1572B6?style=flat-square&logo=css3&logoColor=white)
+- ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
+- ![Fetch API](https://img.shields.io/badge/Fetch-API-005571?style=flat-square&logo=javascript&logoColor=white)
+- ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-  - **Summary**: Focused on building a webpage with basic CSS. It included exercises on text styling, layout creation, and working with simple CSS properties like margins, padding, fonts, and colors.
+---
 
-- **Branch**: `Challenge2_CSSflex`
+## 🔗 Demo
 
-  - **Summary**: Introduced the use of CSS Flexbox to create flexible and responsive layouts. Emphasis was placed on alignments, order of elements, and distribution of space within a container.
+Check out the live demo of the Adventure Blog App:
 
-- **Branch**: `Challenge3_SCSS`
+👉 [Live Demo](https://i.imghippo.com/files/kLe9228jdU.png)
 
-  - **Summary**: Worked with SCSS (Sass) to explore variables, nesting, and mixins. This challenge involved converting plain CSS to SCSS and understanding how to structure stylesheets more efficiently.
+---
 
-- **Branch**: `Challenge4_Bootstrap`
+## Installation 🔨
 
-  - **Summary**: Applied Bootstrap to create responsive web layouts. Focused on using the grid system, components, and utilities provided by Bootstrap to build a layout that adapts to different screen sizes.
+To run this project locally, follow the steps below:
 
-- **Branch**: `Challenge5_JSBasics`
+### Steps to Install
 
-  - **Summary**: Covered the fundamentals of JavaScript, including variables, data types, functions, loops, and conditionals. Focused on writing simple scripts to manipulate data and control the flow of logic.
+1. Clone the repository:
 
-- **Branch**: `Challenge6_Arr_Loops_Functions`
+   ```bash
+   git clone https://github.com/makedonkatochevska/challenges.git .
+   ```
 
-  - **Summary**: Implemented array manipulation techniques using JavaScript, such as `map()`, `filter()`, `reduce()`, and worked with loops and functions to process data in different ways.
+2. Switch to the challenge branch:
 
-- **Branch**: `Challenge7_Array_Methods`
+   ```bash
+   git checkout Challenge15_React_Hooks_Events
+   ```
 
-  - **Summary**: Focused on using JavaScript array methods to perform advanced data manipulation. Covered methods like `forEach()`, `find()`, `sort()`, and `reverse()` to modify arrays and work with data efficiently.
+3. Install dependencies:
 
-- **Branch**: `Challenge8_Functions_Advanced`
+   ```bash
+   npm install
+   ```
 
-  - **Summary**: Deep dive into JavaScript functions with a focus on advanced topics such as higher-order functions, closures, and callback functions. This challenge enhanced understanding of how functions can be used effectively in JavaScript.
+4. Start the development server:
 
-- **Branch**: `Challenge9_JS_Events_and_Objects`
+   ```bash
+   npm run dev
+   ```
 
-  - **Summary**: Introduced JavaScript events and objects, showing how to manipulate the DOM through event listeners, how to handle user interactions, and how to create and manipulate custom objects in JavaScript.
+---
 
-- **Branch**: `Challenge10_JS_Objects`
+## Usage 🚀
 
-  - **Summary**: Focused on understanding and working with JavaScript objects. Covered topics such as object properties, methods, iteration over objects, and object manipulation techniques.
+- On app load, bike data is fetched asynchronously from  
+  `https://challenges.brainster.tech/ajax_data/data.json`.
+- Users can filter the bike list by selecting **one filter at a time** — either a gender or a brand.
+- Clicking the same active filter again will toggle it off and reset the product list to show all bikes.
+- The **"Show All"** filter clears any active filters and displays the full bike collection.
+- Filter badges dynamically show the number of bikes available for each filter option.
+- Active filters are visually highlighted with bold text and an orange color.
+- Components used include:
+  - `Card` — displays individual bike info.
+  - `CardsContainer` — renders the list of filtered bike cards.
+  - `Filters` and `EachFilter` — display and manage filtering options.
+  - `MainSection` — holds state and orchestrates data flow between components.
 
-- **Branch**: `Challenge11_JS_Scoping_Date_Contex`
+---
 
-  - **Summary**: Covered JavaScript scoping, context, and closures, with an emphasis on the `this` keyword and how it behaves in different contexts. Also included working with JavaScript's `Date` object for date manipulation and formatting.
+## 🧰 Template Reference
 
-- **Branch**: `Challenge12_JavaScript_CRUD`
+# React + TypeScript + Vite
 
-  - **Summary**: Implemented CRUD (Create, Read, Update, Delete) operations using JavaScript to manipulate data in arrays or objects. Focused on working with forms, storing data in variables, and updating the DOM dynamically.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- **Branch**: `Challenge13_Async_JavaScript`
+Currently, two official plugins are available:
 
-  - **Summary**: Explored asynchronous JavaScript programming using techniques like callbacks, promises, and async/await. The challenge involved making asynchronous API calls, handling data, and building a more interactive and responsive user experience.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **Branch**: `Challenge14_React_Basics`
+## Expanding the ESLint configuration
 
-  - **Summary**: Built a responsive single-page React application using TypeScript and Vite. The challenge emphasized core React concepts such as component-based architecture, prop management, and integration with external data sources. Key goals included creating reusable UI components, applying TypeScript best practices, and rendering dynamic content from a JSON Server to simulate real-world data interaction.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+});
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
+
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    "react-x": reactX,
+    "react-dom": reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs["recommended-typescript"].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+});
+```
+
+---
+
+## Credits 📝
+
+This project is a React rewrite of the **Async JavaScript DOM & Filter - Bike Store Application Challenge** originally developed by **Brainster Academy**.
+
+It showcases skills in:
+
+- Asynchronous data fetching with `fetch()` and React hooks.
+- Dynamic rendering and filtering of lists based on user interaction.
+- Clean component architecture and state management in React.
+- Applying UI logic to highlight active filters and display dynamic counts.
+
+Thanks to Brainster Academy for the original challenge and learning resources that inspired this project.
+
+---
+
+## Contact 📞
+
+📫 You can reach me at [makedonkatochevska@gmail.com](mailto:makedonkatochevska@gmail.com) or connect with me on:
+
+- [LinkedIn](https://www.linkedin.com/in/makedonka-tochevska)
+- [GitHub](https://github.com/makedonkatochevska)

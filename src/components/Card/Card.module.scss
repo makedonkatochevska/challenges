@@ -1,0 +1,33 @@
+.card {
+  flex-basis: calc(33.3333% - 15px);
+  border: 3px solid #d3d3d3;
+  border-radius: 5px;
+  cursor: pointer;
+
+  img {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in;
+    width: 250px;
+    height: 170px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  //title container
+  .titleContainer {
+    padding: 15px;
+    background-color: #ffa500;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover img {
+    transform: scale(1);
+  }
+
+  &:hover {
+    border: 3px solid #ffa500;
+  }
+}

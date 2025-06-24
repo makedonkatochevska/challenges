@@ -1,0 +1,56 @@
+aside {
+  flex-basis: 25%;
+
+  //filter container
+  .filterContainer {
+    padding-block: 15px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d3d3d3;
+    }
+
+    .filterNumberBtn {
+      padding: 5px 10px;
+      border: none;
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      font-weight: 800;
+      color: #333333;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #333333;
+
+    .filterListInner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.activeFilter {
+  font-weight: 800;
+  color: #ffa500;
+}
+
+.activeButton {
+  background-color: #ffa500 !important;
+}
