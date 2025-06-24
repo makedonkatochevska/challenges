@@ -6,7 +6,6 @@
   <summary>Click to expand</summary>
   - 📜 Project Description <br>
   - ⚙️ Technologies Used <br>
-  - 🔗 Demo <br>
   - 🔨 Installation <br>
   - 🚀 Usage <br>
   - 🧰 Template Reference <br>
@@ -40,14 +39,6 @@ Key features include:
 - ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
 - ![Fetch API](https://img.shields.io/badge/Fetch-API-005571?style=flat-square&logo=javascript&logoColor=white)
 - ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
----
-
-## 🔗 Demo
-
-Check out the live demo of the Adventure Blog App:
-
-👉 [Live Demo](https://i.imghippo.com/files/kLe9228jdU.png)
 
 ---
 
