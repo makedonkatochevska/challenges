@@ -76,3 +76,11 @@ Below is a list of all the branches in this repository, along with a summary of 
 - **Branch**: `Challenge14_React_Basics`
 
   - **Summary**: Built a responsive single-page React application using TypeScript and Vite. The challenge emphasized core React concepts such as component-based architecture, prop management, and integration with external data sources. Key goals included creating reusable UI components, applying TypeScript best practices, and rendering dynamic content from a JSON Server to simulate real-world data interaction.
+
+- **Branch**: `Challenge15_React_Hooks_Events`
+
+  - **Summary**: Developed a desktop-focused React application using TypeScript to dynamically display and filter bike products. The challenge centered on API integration, component reusability, and managing UI state with React hooks. Core objectives included building modular UI components, implementing single-filter logic for gender or brand, and rendering real-time filter badge counts to reflect matching products.
+
+- **Branch**: `Challenge16_React_Routing`
+
+  - **Summary**: Implemented client-side routing in a React application using react-router-dom. The challenge focused on setting up dynamic and nested routes, utilizing route parameters, and managing layout with shared components. Key goals included building a consistent layout with <Outlet />, handling navigation through <Link>, and ensuring graceful fallback routing for undefined paths.
