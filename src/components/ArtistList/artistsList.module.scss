@@ -1,0 +1,11 @@
+.artistsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+  }
+}
