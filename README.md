@@ -1,86 +1,185 @@
-# Weekly Front-End Challenges
+# Challenge 17 - React Context
 
-Welcome to my repository for the **weekly challenges** at **Brainster Front-End Academy**! Each week, we are tasked with a new challenge that helps us sharpen our coding skills and apply the concepts learned during the course.
+## Table of Contents
 
-### Challenge Format:
+<details>
+  <summary>Click to expand</summary>
+  - 📜 Project Description <br>
+  - ⚙️ Technologies Used <br>
+  - 🔨 Installation <br>
+  - 🚀 Usage <br>
+  - 🧰 Template Reference <br>
+  - 📝 Credits <br>
+  - 📞 Contact <br>
+</details>
 
-- **Frequency**: One challenge every week.
-- **Duration**: We have **7 days** to complete each challenge.
-- **Progression**: The difficulty of the challenges increases over time, starting with simpler tasks and gradually advancing to more complex ones.
+---
 
-The challenges are designed to build our skills progressively, from mastering basic HTML and CSS to diving deeper into Bootstrap, JavaScript, React, and other advanced front-end technologies. With each passing week, we face new problems that push us to think critically and improve our ability to write clean, efficient code.
+## Project Description 📜
 
-### What You’ll Find in This Repo:
+This **Restaurant Application** is built with **React**, **TypeScript**, and **Zustand** using a mobile-first approach and clean component architecture.
 
-- **Main Branch**: Overview and general information about the challenges.
-- **Individual Challenge Branches**: Each branch corresponds to a specific week's challenge. Explore them to see how we tackle different front-end tasks each week.
+It uses a local `db.json` server as its data source and provides interactive navigation via **React Router**.
 
-These challenges are a great way to test your skills, experiment with new ideas, and see your progress as a front-end developer. Check out the branches to see how the challenges escalate and the skills i develop each week!
+Key features include:
 
-Below is a list of all the branches in this repository, along with a summary of what each one contains:
+- Mobile-first UI with centralized layout on larger screens.
+- **Component-based** architecture with reusable, strongly typed components.
+- **Zustand** is used for global state management (especially for handling favorites).
+- Data fetched from a local JSON server via `npm run server`.
+- Uses **AJAX PUT requests** to update reviews dynamically.
+- Restaurant rating is calculated based on average star reviews and is live-updated.
+- Smooth navigation using **React Router DOM** with clearly structured routes.
+- Engaging error handling using **Lottie animations**.
 
-### Challenge Branches:
+### Pages & Components:
 
-- **Branch**: `Challenge1_CSS`
+- **Navbar** — Persistent on all pages. Contains a logo (links to home) and a heart icon (links to favorites).
+- **Footer** — Shared footer with consistent branding.
+- **AllRestaurants** — Lists all restaurants from `db.json` using `RestaurantCard`.
+- **RestaurantCard** — Displays summary info, links to restaurant detail page.
+- **RestaurantDetail** — Displays detailed info about one restaurant, including a fully functional reviews section.
+- **Reviews** — Users can submit reviews, triggering a `PUT` request to update `db.json`.
+- **PopularRestaurants** — Displays top 10 restaurants by number of reviews, optionally sorted by rating.
+- **SurpriseRestaurant** — Shows a link to a random restaurant each time it's clicked.
+- **Cuisines** — Buttons for each cuisine type, linking to a filtered cuisine detail page.
+- **CuisineDetail** — Shows only restaurants of the selected type.
+- **Favorites** — Lists all favorite restaurants (globally managed with Zustand).
 
-  - **Summary**: Focused on building a webpage with basic CSS. It included exercises on text styling, layout creation, and working with simple CSS properties like margins, padding, fonts, and colors.
+---
 
-- **Branch**: `Challenge2_CSSflex`
+## Technologies Used ⚙️
 
-  - **Summary**: Introduced the use of CSS Flexbox to create flexible and responsive layouts. Emphasis was placed on alignments, order of elements, and distribution of space within a container.
+- ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white)
+- ![Zustand](https://img.shields.io/badge/Zustand-000000?style=flat-square&logo=react&logoColor=white)
+- ![Lottie](https://img.shields.io/badge/Lottie-FF3E00?style=flat-square&logo=lottie&logoColor=white)
+- ![CSS Modules](https://img.shields.io/badge/CSS_Modules-1572B6?style=flat-square&logo=css3&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
-- **Branch**: `Challenge3_SCSS`
+---
 
-  - **Summary**: Worked with SCSS (Sass) to explore variables, nesting, and mixins. This challenge involved converting plain CSS to SCSS and understanding how to structure stylesheets more efficiently.
+## Installation 🔨
 
-- **Branch**: `Challenge4_Bootstrap`
+To run this project locally, follow the steps below:
 
-  - **Summary**: Applied Bootstrap to create responsive web layouts. Focused on using the grid system, components, and utilities provided by Bootstrap to build a layout that adapts to different screen sizes.
+### Steps to Install
 
-- **Branch**: `Challenge5_JSBasics`
+1. Clone the repository:
 
-  - **Summary**: Covered the fundamentals of JavaScript, including variables, data types, functions, loops, and conditionals. Focused on writing simple scripts to manipulate data and control the flow of logic.
+   ```bash
+   git clone https://github.com/makedonkatochevska/challenges.git .
+   ```
 
-- **Branch**: `Challenge6_Arr_Loops_Functions`
+2. Switch to the challenge branch:
 
-  - **Summary**: Implemented array manipulation techniques using JavaScript, such as `map()`, `filter()`, `reduce()`, and worked with loops and functions to process data in different ways.
+   ```bash
+   git checkout Challenge17_React_Context
+   ```
 
-- **Branch**: `Challenge7_Array_Methods`
+3. Install dependencies:
 
-  - **Summary**: Focused on using JavaScript array methods to perform advanced data manipulation. Covered methods like `forEach()`, `find()`, `sort()`, and `reverse()` to modify arrays and work with data efficiently.
+   ```bash
+   npm install
+   ```
 
-- **Branch**: `Challenge8_Functions_Advanced`
+4. Start the JSON server:
 
-  - **Summary**: Deep dive into JavaScript functions with a focus on advanced topics such as higher-order functions, closures, and callback functions. This challenge enhanced understanding of how functions can be used effectively in JavaScript.
+   ```bash
+   npm run server
+   ```
 
-- **Branch**: `Challenge9_JS_Events_and_Objects`
+5. Start the development server:
 
-  - **Summary**: Introduced JavaScript events and objects, showing how to manipulate the DOM through event listeners, how to handle user interactions, and how to create and manipulate custom objects in JavaScript.
+   ```bash
+   npm run start
+   ```
 
-- **Branch**: `Challenge10_JS_Objects`
+---
 
-  - **Summary**: Focused on understanding and working with JavaScript objects. Covered topics such as object properties, methods, iteration over objects, and object manipulation techniques.
+## Usage 🚀
 
-- **Branch**: `Challenge11_JS_Scoping_Date_Contex`
+- Visit the **Home Page** (`/`) to see a welcome message and a list of all restaurants.
+- Click on a **restaurant card** to navigate to that restaurant’s detail page, where you can see detailed info and reviews.
+- Submit a new review using the review form; this will update the restaurant’s rating in real time by sending a `PUT` request to the backend.
+- Use the cuisine buttons to filter restaurants by their type.
+- Visit the **Favorites Page** to view all your favorite restaurants, which are saved globally using Zustand and persist across page reloads.
+- Click the **Surprise Me** button to go to a random restaurant’s detail page.
+- If you visit an unknown or invalid route, the app will show a user-friendly **404 Error Page** with engaging Lottie animations.
+- The **Navbar** is always visible with links to the Home Page and Favorites Page for easy navigation.
 
-  - **Summary**: Covered JavaScript scoping, context, and closures, with an emphasis on the `this` keyword and how it behaves in different contexts. Also included working with JavaScript's `Date` object for date manipulation and formatting.
+---
 
-- **Branch**: `Challenge12_JavaScript_CRUD`
+## 🧰 Template Reference
 
-  - **Summary**: Implemented CRUD (Create, Read, Update, Delete) operations using JavaScript to manipulate data in arrays or objects. Focused on working with forms, storing data in variables, and updating the DOM dynamically.
+# React + TypeScript + Vite
 
-- **Branch**: `Challenge13_Async_JavaScript`
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-  - **Summary**: Explored asynchronous JavaScript programming using techniques like callbacks, promises, and async/await. The challenge involved making asynchronous API calls, handling data, and building a more interactive and responsive user experience.
+Currently, two official plugins are available:
 
-- **Branch**: `Challenge14_React_Basics`
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-  - **Summary**: Built a responsive single-page React application using TypeScript and Vite. The challenge emphasized core React concepts such as component-based architecture, prop management, and integration with external data sources. Key goals included creating reusable UI components, applying TypeScript best practices, and rendering dynamic content from a JSON Server to simulate real-world data interaction.
+## Expanding the ESLint configuration
 
-- **Branch**: `Challenge15_React_Hooks_Events`
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-  - **Summary**: Developed a desktop-focused React application using TypeScript to dynamically display and filter bike products. The challenge centered on API integration, component reusability, and managing UI state with React hooks. Core objectives included building modular UI components, implementing single-filter logic for gender or brand, and rendering real-time filter badge counts to reflect matching products.
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+});
+```
 
-- **Branch**: `Challenge16_React_Routing`
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-  - **Summary**: Implemented client-side routing in a React application using react-router-dom. The challenge focused on setting up dynamic and nested routes, utilizing route parameters, and managing layout with shared components. Key goals included building a consistent layout with <Outlet />, handling navigation through <Link>, and ensuring graceful fallback routing for undefined paths.
+```js
+// eslint.config.js
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
+
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    "react-x": reactX,
+    "react-dom": reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs["recommended-typescript"].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+});
+```
+
+---
+
+## Credits 📝
+
+This project was developed as part of a React + TypeScript challenge, focused on component architecture, state management, and dynamic routing.
+Special thanks to Brainster Academy for the starter data and project structure.
+
+---
+
+## Contact 📞
+
+📫 You can reach me at [makedonkatochevska@gmail.com](mailto:makedonkatochevska@gmail.com) or connect with me on:
+
+- [LinkedIn](https://www.linkedin.com/in/makedonka-tochevska)
+- [GitHub](https://github.com/makedonkatochevska)
