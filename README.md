@@ -84,3 +84,7 @@ Below is a list of all the branches in this repository, along with a summary of 
 - **Branch**: `Challenge16_React_Routing`
 
   - **Summary**: Implemented client-side routing in a React application using react-router-dom. The challenge focused on setting up dynamic and nested routes, utilizing route parameters, and managing layout with shared components. Key goals included building a consistent layout with <Outlet />, handling navigation through <Link>, and ensuring graceful fallback routing for undefined paths.
+
+- **Branch**: `Challenge17_React_Context`
+
+  - **Summary**: Developed a restaurant application using React, TypeScript, Zustand for state management, and react-router-dom for client-side routing. Implemented features include listing all restaurants, detailed restaurant pages with dynamic reviews, favorites management with persistence, cuisine filtering, and a surprise restaurant feature. Utilized AJAX `PUT` requests to update reviews on the backend, integrated Lottie animations for error pages, and maintained a consistent layout with reusable components like Navbar and Footer. Focused on clean component design, type safety, and smooth user experience with real-time UI updates.
