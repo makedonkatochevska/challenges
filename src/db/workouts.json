@@ -1,0 +1,28 @@
+{
+  "workouts": [
+    {
+      "id": "1",
+      "userId": "user123",
+      "exerciseType": "Running",
+      "duration": 30,
+      "intensity": "Medium",
+      "date": "2023-01-01T08:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "user123",
+      "exerciseType": "Cycling",
+      "duration": 45,
+      "intensity": "High",
+      "date": "2023-01-02T10:30:00Z"
+    },
+    {
+      "id": "3",
+      "userId": "user456",
+      "exerciseType": "Swimming",
+      "duration": 60,
+      "intensity": "Low",
+      "date": "2023-01-03T15:15:00Z"
+    }
+  ]
+}

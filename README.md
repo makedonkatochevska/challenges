@@ -1,94 +1,214 @@
-# Weekly Front-End Challenges
+# Challenge 18 - React with Firebase
 
-Welcome to my repository for the **weekly challenges** at **Brainster Front-End Academy**! Each week, we are tasked with a new challenge that helps us sharpen our coding skills and apply the concepts learned during the course.
+## Table of Contents
 
-### Challenge Format:
+<details>
+  <summary>Click to expand</summary>
+  - 📜 Project Description  <br>
+  - ⚙️ Technologies Used   <br>
+  - 🔨 Installation   <br>
+  - 🔗 Live Demo <br>
+  - 🚀 Usage   <br>
+  - 🔧 Features & Components   <br>
+  - 🧰 Template Reference <br>
+  - 📝 Credits   <br>
+  - 📞 Contact   <br>
+</details>
 
-- **Frequency**: One challenge every week.
-- **Duration**: We have **7 days** to complete each challenge.
-- **Progression**: The difficulty of the challenges increases over time, starting with simpler tasks and gradually advancing to more complex ones.
+---
 
-The challenges are designed to build our skills progressively, from mastering basic HTML and CSS to diving deeper into Bootstrap, JavaScript, React, and other advanced front-end technologies. With each passing week, we face new problems that push us to think critically and improve our ability to write clean, efficient code.
+## Project Description 📜
 
-### What You’ll Find in This Repo:
+This **Fitness Tracker App** is a React + TypeScript application built with **Firebase** integration for authentication and data storage. Users can log their workouts, view all workouts, and add new ones with a form that includes proper validation and user-friendly UX.
 
-- **Main Branch**: Overview and general information about the challenges.
-- **Individual Challenge Branches**: Each branch corresponds to a specific week's challenge. Explore them to see how we tackle different front-end tasks each week.
+The app features **Google Authentication**, **Firestore integration**, and deployment via **Firebase Hosting**. It also uses **Material UI** for polished UI components and **Context API** for managing authentication state.
 
-These challenges are a great way to test your skills, experiment with new ideas, and see your progress as a front-end developer. Check out the branches to see how the challenges escalate and the skills i develop each week!
+---
 
-Below is a list of all the branches in this repository, along with a summary of what each one contains:
+## Technologies Used ⚙️
 
-### Challenge Branches:
+- ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+- ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+- ![Material UI](https://img.shields.io/badge/Material--UI-007FFF?style=flat-square&logo=mui&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white)
 
-- **Branch**: `Challenge1_CSS`
+---
 
-  - **Summary**: Focused on building a webpage with basic CSS. It included exercises on text styling, layout creation, and working with simple CSS properties like margins, padding, fonts, and colors.
+## Installation 🔨
 
-- **Branch**: `Challenge2_CSSflex`
+To run this project locally, follow the steps below:
 
-  - **Summary**: Introduced the use of CSS Flexbox to create flexible and responsive layouts. Emphasis was placed on alignments, order of elements, and distribution of space within a container.
+### Steps to Install
 
-- **Branch**: `Challenge3_SCSS`
+1. Clone the repository:
 
-  - **Summary**: Worked with SCSS (Sass) to explore variables, nesting, and mixins. This challenge involved converting plain CSS to SCSS and understanding how to structure stylesheets more efficiently.
+   ```bash
+   git clone https://github.com/makedonkatochevska/challenges.git .
+   ```
 
-- **Branch**: `Challenge4_Bootstrap`
+2. Switch to the challenge branch:
 
-  - **Summary**: Applied Bootstrap to create responsive web layouts. Focused on using the grid system, components, and utilities provided by Bootstrap to build a layout that adapts to different screen sizes.
+   ```bash
+   git checkout Challenge18_React_with_Firebase
+   ```
 
-- **Branch**: `Challenge5_JSBasics`
+3. Install dependencies:
 
-  - **Summary**: Covered the fundamentals of JavaScript, including variables, data types, functions, loops, and conditionals. Focused on writing simple scripts to manipulate data and control the flow of logic.
+   ```bash
+   npm install
+   ```
 
-- **Branch**: `Challenge6_Arr_Loops_Functions`
+4. Start the development server:
 
-  - **Summary**: Implemented array manipulation techniques using JavaScript, such as `map()`, `filter()`, `reduce()`, and worked with loops and functions to process data in different ways.
+   ```bash
+   npm run dev
+   ```
 
-- **Branch**: `Challenge7_Array_Methods`
+---
 
-  - **Summary**: Focused on using JavaScript array methods to perform advanced data manipulation. Covered methods like `forEach()`, `find()`, `sort()`, and `reverse()` to modify arrays and work with data efficiently.
+## 🔗 Live Demo
 
-- **Branch**: `Challenge8_Functions_Advanced`
+[Click here to view the live app](https://fitness-tracker-challeng-e4680.web.app)
 
-  - **Summary**: Deep dive into JavaScript functions with a focus on advanced topics such as higher-order functions, closures, and callback functions. This challenge enhanced understanding of how functions can be used effectively in JavaScript.
+---
 
-- **Branch**: `Challenge9_JS_Events_and_Objects`
+## Usage 🚀
 
-  - **Summary**: Introduced JavaScript events and objects, showing how to manipulate the DOM through event listeners, how to handle user interactions, and how to create and manipulate custom objects in JavaScript.
+- Unauthenticated users land on the **Welcome Page**, where they can log in with Google.
+- After login, users are redirected to the **All Workouts** page.
+- From there, users can:
+  - View all previously tracked workouts.
+  - Add a new workout via the **Add New Workout** form.
+  - Navigate using the persistent **Navbar**.
+  - Log out securely.
 
-- **Branch**: `Challenge10_JS_Objects`
+### Add Workout Form 📝
 
-  - **Summary**: Focused on understanding and working with JavaScript objects. Covered topics such as object properties, methods, iteration over objects, and object manipulation techniques.
+- Users fill out:
+  - **Exercise Type** (dropdown, fetched from Firestore)
+  - **Duration** (in minutes)
+  - **Intensity** (Low, Medium, High)
+- **Validation**: The submit button stays disabled unless all required fields are filled in correctly.
+- On form submission:
+  - The workout is saved to Firestore under the logged-in user.
+  - The user is redirected to the Home page.
 
-- **Branch**: `Challenge11_JS_Scoping_Date_Contex`
+---
 
-  - **Summary**: Covered JavaScript scoping, context, and closures, with an emphasis on the `this` keyword and how it behaves in different contexts. Also included working with JavaScript's `Date` object for date manipulation and formatting.
+## Features & Components 🔧
 
-- **Branch**: `Challenge12_JavaScript_CRUD`
+### 🔐 Authentication
 
-  - **Summary**: Implemented CRUD (Create, Read, Update, Delete) operations using JavaScript to manipulate data in arrays or objects. Focused on working with forms, storing data in variables, and updating the DOM dynamically.
+- Google login with Firebase Auth.
+- Context API for managing login state.
+- Logout redirects to the Welcome Page.
 
-- **Branch**: `Challenge13_Async_JavaScript`
+### 🧩 Components
 
-  - **Summary**: Explored asynchronous JavaScript programming using techniques like callbacks, promises, and async/await. The challenge involved making asynchronous API calls, handling data, and building a more interactive and responsive user experience.
+- **WelcomePage**
 
-- **Branch**: `Challenge14_React_Basics`
+  - Shown to users who are not logged in.
+  - Contains a welcome message and login button.
 
-  - **Summary**: Built a responsive single-page React application using TypeScript and Vite. The challenge emphasized core React concepts such as component-based architecture, prop management, and integration with external data sources. Key goals included creating reusable UI components, applying TypeScript best practices, and rendering dynamic content from a JSON Server to simulate real-world data interaction.
+- **Navbar**
 
-- **Branch**: `Challenge15_React_Hooks_Events`
+  - Visible after login.
+  - Includes links to All Workouts, Add New Workout, and Logout.
 
-  - **Summary**: Developed a desktop-focused React application using TypeScript to dynamically display and filter bike products. The challenge centered on API integration, component reusability, and managing UI state with React hooks. Core objectives included building modular UI components, implementing single-filter logic for gender or brand, and rendering real-time filter badge counts to reflect matching products.
+- **AllWorkouts**
 
-- **Branch**: `Challenge16_React_Routing`
+  - Fetches and displays all workouts from Firestore.
+  - If no workouts are found, a friendly message is shown.
 
-  - **Summary**: Implemented client-side routing in a React application using react-router-dom. The challenge focused on setting up dynamic and nested routes, utilizing route parameters, and managing layout with shared components. Key goals included building a consistent layout with <Outlet />, handling navigation through <Link>, and ensuring graceful fallback routing for undefined paths.
+- **AddNewWorkout**
+  - A form to add a new workout:
+    - Select exercise type
+    - Enter duration (number input)
+    - Choose intensity level
+  - Submit button is disabled until form is valid.
+  - Adds the workout to the user's personal workout list.
 
-- **Branch**: `Challenge17_React_Context`
+### 🔧 Additional Features
 
-  - **Summary**: Developed a restaurant application using React, TypeScript, Zustand for state management, and react-router-dom for client-side routing. Implemented features include listing all restaurants, detailed restaurant pages with dynamic reviews, favorites management with persistence, cuisine filtering, and a surprise restaurant feature. Utilized AJAX `PUT` requests to update reviews on the backend, integrated Lottie animations for error pages, and maintained a consistent layout with reusable components like Navbar and Footer. Focused on clean component design, type safety, and smooth user experience with real-time UI updates.
+- Form validation via React state
+- Data fetching with Firebase Firestore
+- Google Auth integration with Firebase
+- Responsive UI with Material UI
 
-- **Branch**: `Challenge18_React_with_Firebase`
+---
 
-  - **Summary**: Built a workout tracking web application using React, TypeScript, and Firebase Authentication for user login/logout functionality. Implemented client-side routing with react-router-dom and protected routes to ensure only authenticated users can access certain pages (e.g., All Workouts, Add New Workout). Utilized conditional rendering and <Navigate replace /> to manage redirection and route protection. Integrated Firebase Firestore for storing workout data and used onAuthStateChanged to persist user sessions across refreshes. Focused on responsive design, seamless navigation, and a secure, user-friendly experience.
+## 🧰 Template Reference
+
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+});
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
+
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    "react-x": reactX,
+    "react-dom": reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs["recommended-typescript"].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+});
+```
+
+---
+
+## Credits 📝
+
+This project was built as part of a React + Firebase challenge during my Front-End Development course at **Brainster Academy**. It combines modern tools like React, TypeScript, Firebase, and Material UI to demonstrate real-world full-stack app development.
+
+Special thanks to the Brainster mentors and team for guidance and support during the project.
+
+---
+
+## Contact 📞
+
+📫 You can reach me at [makedonkatochevska@gmail.com](mailto:makedonkatochevska@gmail.com) or connect with me on:
+
+- [LinkedIn](https://www.linkedin.com/in/makedonka-tochevska)
+- [GitHub](https://github.com/makedonkatochevska)

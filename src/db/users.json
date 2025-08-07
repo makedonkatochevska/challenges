@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "user123",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "hashed_password_here",
+      "createdAt": "2023-01-01T08:00:00Z"
+    },
+    {
+      "id": "user456",
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "password": "hashed_password_here",
+      "createdAt": "2023-01-02T10:30:00Z"
+    }
+  ]
+}

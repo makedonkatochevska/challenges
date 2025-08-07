@@ -1,0 +1,54 @@
+{
+  "workoutTypes": [
+    {
+      "id": "type1",
+      "name": "Cardio",
+      "description": "Aerobic exercises to improve cardiovascular health."
+    },
+    {
+      "id": "type2",
+      "name": "Strength Training",
+      "description": "Building muscle and increasing strength."
+    },
+    {
+      "id": "type3",
+      "name": "Flexibility",
+      "description": "Exercises to improve flexibility and range of motion."
+    },
+    {
+      "id": "type4",
+      "name": "Balance",
+      "description": "Exercises to enhance stability and balance."
+    },
+    {
+      "id": "type5",
+      "name": "High-Intensity Interval Training (HIIT)",
+      "description": "Short bursts of intense exercise followed by periods of rest."
+    },
+    {
+      "id": "type6",
+      "name": "Yoga",
+      "description": "Physical, mental, and spiritual practices to improve well-being."
+    },
+    {
+      "id": "type7",
+      "name": "Pilates",
+      "description": "Low-impact exercises to improve flexibility and strength."
+    },
+    {
+      "id": "type8",
+      "name": "CrossFit",
+      "description": "High-intensity functional fitness incorporating various exercises."
+    },
+    {
+      "id": "type9",
+      "name": "Running",
+      "description": "Outdoor or indoor running activities for cardiovascular fitness."
+    },
+    {
+      "id": "type10",
+      "name": "Swimming",
+      "description": "Water-based exercises for full-body workout and endurance."
+    }
+  ]
+}
