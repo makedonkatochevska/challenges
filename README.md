@@ -88,3 +88,7 @@ Below is a list of all the branches in this repository, along with a summary of 
 - **Branch**: `Challenge17_React_Context`
 
   - **Summary**: Developed a restaurant application using React, TypeScript, Zustand for state management, and react-router-dom for client-side routing. Implemented features include listing all restaurants, detailed restaurant pages with dynamic reviews, favorites management with persistence, cuisine filtering, and a surprise restaurant feature. Utilized AJAX `PUT` requests to update reviews on the backend, integrated Lottie animations for error pages, and maintained a consistent layout with reusable components like Navbar and Footer. Focused on clean component design, type safety, and smooth user experience with real-time UI updates.
+
+- **Branch**: `Challenge18_React_with_Firebase`
+
+  - **Summary**: Built a workout tracking web application using React, TypeScript, and Firebase Authentication for user login/logout functionality. Implemented client-side routing with react-router-dom and protected routes to ensure only authenticated users can access certain pages (e.g., All Workouts, Add New Workout). Utilized conditional rendering and <Navigate replace /> to manage redirection and route protection. Integrated Firebase Firestore for storing workout data and used onAuthStateChanged to persist user sessions across refreshes. Focused on responsive design, seamless navigation, and a secure, user-friendly experience.
