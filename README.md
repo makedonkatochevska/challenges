@@ -92,3 +92,7 @@ Below is a list of all the branches in this repository, along with a summary of 
 - **Branch**: `Challenge18_React_with_Firebase`
 
   - **Summary**: Built a workout tracking web application using React, TypeScript, and Firebase Authentication for user login/logout functionality. Implemented client-side routing with react-router-dom and protected routes to ensure only authenticated users can access certain pages (e.g., All Workouts, Add New Workout). Utilized conditional rendering and <Navigate replace /> to manage redirection and route protection. Integrated Firebase Firestore for storing workout data and used onAuthStateChanged to persist user sessions across refreshes. Focused on responsive design, seamless navigation, and a secure, user-friendly experience.
+
+- **Branch**: `Challenge19_NextJS`
+
+  - **Summary**: Built a fully functional store with product listing, filtering by category and gender, search functionality, and product detail pages. Implemented client-side routing, dynamic URL-based filters, responsive design, and SEO-friendly metadata.
