@@ -1,94 +1,204 @@
-# Weekly Front-End Challenges
+# Challenge 19 - NEXT JS
 
-Welcome to my repository for the **weekly challenges** at **Brainster Front-End Academy**! Each week, we are tasked with a new challenge that helps us sharpen our coding skills and apply the concepts learned during the course.
+## Table of Contents
 
-### Challenge Format:
+<details>
+  <summary>Click to expand</summary>
+  - 📜 Project Description  <br>
+  - ⚙️ Technologies Used   <br>
+  - 🔨 Installation   <br>
+  - 🚀 Usage   <br>
+  - 📝 API Endpoints & Resources  <br>
+  - 🧰 Template Reference <br>
+  - 📝 Credits   <br>
+  - 📞 Contact   <br>
+</details>
 
-- **Frequency**: One challenge every week.
-- **Duration**: We have **7 days** to complete each challenge.
-- **Progression**: The difficulty of the challenges increases over time, starting with simpler tasks and gradually advancing to more complex ones.
+---
 
-The challenges are designed to build our skills progressively, from mastering basic HTML and CSS to diving deeper into Bootstrap, JavaScript, React, and other advanced front-end technologies. With each passing week, we face new problems that push us to think critically and improve our ability to write clean, efficient code.
+## Project Description 📜
 
-### What You’ll Find in This Repo:
+This project is a **Next.js E-commerce app** built to demonstrate full-stack functionality with **pre-rendering**, dynamic filtering, and client-side search. It fetches data from a **JSON server** (`db.json`) and populates pre-built HTML skeleton components with actual content using server-side data fetching.
 
-- **Main Branch**: Overview and general information about the challenges.
-- **Individual Challenge Branches**: Each branch corresponds to a specific week's challenge. Explore them to see how we tackle different front-end tasks each week.
+Key functionalities include:
 
-These challenges are a great way to test your skills, experiment with new ideas, and see your progress as a front-end developer. Check out the branches to see how the challenges escalate and the skills i develop each week!
+- Dynamic product and blog filtering by category, gender, or search query.
+- Pre-rendered pages with `generateStaticParams`.
+- Fully functional header, footer, and reusable components.
+- AJAX/Fetch integration with JSON server for data.
 
-Below is a list of all the branches in this repository, along with a summary of what each one contains:
+---
 
-### Challenge Branches:
+## Technologies Used ⚙️
 
-- **Branch**: `Challenge1_CSS`
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+- ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+- ![JSON Server](https://img.shields.io/badge/JSON_Server-FF6C37?style=flat-square)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 
-  - **Summary**: Focused on building a webpage with basic CSS. It included exercises on text styling, layout creation, and working with simple CSS properties like margins, padding, fonts, and colors.
+---
 
-- **Branch**: `Challenge2_CSSflex`
+## Installation 🔨
 
-  - **Summary**: Introduced the use of CSS Flexbox to create flexible and responsive layouts. Emphasis was placed on alignments, order of elements, and distribution of space within a container.
+To run this project locally, follow the steps below:
 
-- **Branch**: `Challenge3_SCSS`
+### Steps to Install
 
-  - **Summary**: Worked with SCSS (Sass) to explore variables, nesting, and mixins. This challenge involved converting plain CSS to SCSS and understanding how to structure stylesheets more efficiently.
+1. Clone the repository:
 
-- **Branch**: `Challenge4_Bootstrap`
+   ```bash
+   git clone https://github.com/makedonkatochevska/challenges.git .
+   ```
 
-  - **Summary**: Applied Bootstrap to create responsive web layouts. Focused on using the grid system, components, and utilities provided by Bootstrap to build a layout that adapts to different screen sizes.
+2. Switch to the challenge branch:
 
-- **Branch**: `Challenge5_JSBasics`
+   ```bash
+   git checkout Challenge24_NextJS
+   ```
 
-  - **Summary**: Covered the fundamentals of JavaScript, including variables, data types, functions, loops, and conditionals. Focused on writing simple scripts to manipulate data and control the flow of logic.
+3. Install dependencies:
 
-- **Branch**: `Challenge6_Arr_Loops_Functions`
+   ```bash
+   npm install
+   ```
 
-  - **Summary**: Implemented array manipulation techniques using JavaScript, such as `map()`, `filter()`, `reduce()`, and worked with loops and functions to process data in different ways.
+4. Start JSON server:
 
-- **Branch**: `Challenge7_Array_Methods`
+   ```bash
+   npm run server
+   ```
 
-  - **Summary**: Focused on using JavaScript array methods to perform advanced data manipulation. Covered methods like `forEach()`, `find()`, `sort()`, and `reverse()` to modify arrays and work with data efficiently.
+5. Start the development server:
 
-- **Branch**: `Challenge8_Functions_Advanced`
+   ```bash
+   npm run dev
+   ```
 
-  - **Summary**: Deep dive into JavaScript functions with a focus on advanced topics such as higher-order functions, closures, and callback functions. This challenge enhanced understanding of how functions can be used effectively in JavaScript.
+---
 
-- **Branch**: `Challenge9_JS_Events_and_Objects`
+## Usage 🚀
 
-  - **Summary**: Introduced JavaScript events and objects, showing how to manipulate the DOM through event listeners, how to handle user interactions, and how to create and manipulate custom objects in JavaScript.
+### Home Page
 
-- **Branch**: `Challenge10_JS_Objects`
+- Displays banner content, featured products, and featured blogs.
+- Clicking on a category filter leads to the shop overview page with filtered products.
+- Featured products and blogs link to their respective detail pages.
 
-  - **Summary**: Focused on understanding and working with JavaScript objects. Covered topics such as object properties, methods, iteration over objects, and object manipulation techniques.
+### Shop Overview Page
 
-- **Branch**: `Challenge11_JS_Scoping_Date_Contex`
+- Filter products by **gender** and/or search query.
+- Server-side filtering using JSON server endpoints.
+- Clear filters with “All Products”.
+- Show a message if no results match the filters.
 
-  - **Summary**: Covered JavaScript scoping, context, and closures, with an emphasis on the `this` keyword and how it behaves in different contexts. Also included working with JavaScript's `Date` object for date manipulation and formatting.
+### Shop Detail Page
 
-- **Branch**: `Challenge12_JavaScript_CRUD`
+- View detailed information of a product.
+- Display **related products** using a random selection of 4 products.
 
-  - **Summary**: Implemented CRUD (Create, Read, Update, Delete) operations using JavaScript to manipulate data in arrays or objects. Focused on working with forms, storing data in variables, and updating the DOM dynamically.
+### Blog Overview Page
 
-- **Branch**: `Challenge13_Async_JavaScript`
+- Filter blogs by **category** and/or search query.
+- Server-side filtering using JSON server endpoints.
+- Show a message if no results match the filters.
 
-  - **Summary**: Explored asynchronous JavaScript programming using techniques like callbacks, promises, and async/await. The challenge involved making asynchronous API calls, handling data, and building a more interactive and responsive user experience.
+### Blog Detail Page
 
-- **Branch**: `Challenge14_React_Basics`
+- View full blog details.
+- Display **related blogs** using a random selection of 3 blogs.
 
-  - **Summary**: Built a responsive single-page React application using TypeScript and Vite. The challenge emphasized core React concepts such as component-based architecture, prop management, and integration with external data sources. Key goals included creating reusable UI components, applying TypeScript best practices, and rendering dynamic content from a JSON Server to simulate real-world data interaction.
+### Search Page
 
-- **Branch**: `Challenge15_React_Hooks_Events`
+- Use the search query sent from the header form.
+- Display results from both products and blogs.
+- Fetch data server-side.
 
-  - **Summary**: Developed a desktop-focused React application using TypeScript to dynamically display and filter bike products. The challenge centered on API integration, component reusability, and managing UI state with React hooks. Core objectives included building modular UI components, implementing single-filter logic for gender or brand, and rendering real-time filter badge counts to reflect matching products.
+---
 
-- **Branch**: `Challenge16_React_Routing`
+## API Endpoints & Resources 📝
 
-  - **Summary**: Implemented client-side routing in a React application using react-router-dom. The challenge focused on setting up dynamic and nested routes, utilizing route parameters, and managing layout with shared components. Key goals included building a consistent layout with <Outlet />, handling navigation through <Link>, and ensuring graceful fallback routing for undefined paths.
+- **Banner Content:** `http://localhost:5001/banner_content`
+- **About Page:** `http://localhost:5001/about_page`
+- **Products:** `http://localhost:5001/products`
+  - Filter by search: `/products?q=<searchTerm>`
+  - Filter by gender: `/products?gender_like=<gender>`
+  - Combined filter: `/products?gender_like=<gender>&q=<searchTerm>`
+- **Blogs:** `http://localhost:5001/blogs`
+  - Filter by search: `/blogs?q=<searchTerm>`
+  - Filter by category: `/blogs?category_like=<category>`
+  - Combined filter: `/blogs?category_like=<category>&q=<searchTerm>
 
-- **Branch**: `Challenge17_React_Context`
+---
 
-  - **Summary**: Developed a restaurant application using React, TypeScript, Zustand for state management, and react-router-dom for client-side routing. Implemented features include listing all restaurants, detailed restaurant pages with dynamic reviews, favorites management with persistence, cuisine filtering, and a surprise restaurant feature. Utilized AJAX `PUT` requests to update reviews on the backend, integrated Lottie animations for error pages, and maintained a consistent layout with reusable components like Navbar and Footer. Focused on clean component design, type safety, and smooth user experience with real-time UI updates.
+## 🧰 Template Reference
 
-- **Branch**: `Challenge18_React_with_Firebase`
+# React + TypeScript + Vite
 
-  - **Summary**: Built a workout tracking web application using React, TypeScript, and Firebase Authentication for user login/logout functionality. Implemented client-side routing with react-router-dom and protected routes to ensure only authenticated users can access certain pages (e.g., All Workouts, Add New Workout). Utilized conditional rendering and <Navigate replace /> to manage redirection and route protection. Integrated Firebase Firestore for storing workout data and used onAuthStateChanged to persist user sessions across refreshes. Focused on responsive design, seamless navigation, and a secure, user-friendly experience.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+});
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
+
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    "react-x": reactX,
+    "react-dom": reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs["recommended-typescript"].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+});
+```
+
+---
+
+## Credits 📝
+
+This project was built as part of a Next.js + Front-End Development challenge. All components with HTML skeletons were provided; the focus was on fetching data and implementing functionalities using pre-rendering.
+
+---
+
+## Contact 📞
+
+📫 You can reach me at [makedonkatochevska@gmail.com](mailto:makedonkatochevska@gmail.com) or connect with me on:
+
+- [LinkedIn](https://www.linkedin.com/in/makedonka-tochevska)
+- [GitHub](https://github.com/makedonkatochevska)
